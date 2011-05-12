@@ -1,4 +1,11 @@
 Afrophon::Application.routes.draw do
+
+  root :to => "pages#index"
+  
+  match "/ueber-uns.html" => "pages#ueber-uns"
+  
+  match "/ajax/:path" => "pages#ajax"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

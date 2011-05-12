@@ -1,3 +1,12 @@
-class ApplicationController < ActionController::Base
-  protect_from_forgery
+class PagesController < ApplicationController
+
+def ajax
+  begin
+	render params[:path], :layout => nil
+  rescue ActionView::MissingTemplate
+	render :file => "#{Rails.root}/public/404.html", :status => 404, :layout => false
+  end
+end
+
+
 end

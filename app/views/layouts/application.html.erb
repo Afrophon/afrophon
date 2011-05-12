@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Afrophon</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+<title>Afrophon</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<%= stylesheet_link_tag "style.css" %>
+<%= javascript_include_tag "application.js" %>
+<!--<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" %>-->
+<%= javascript_include_tag "jquery-1.6.min.js" %>
+<%= csrf_meta_tag %>
 </head>
 <body>
+<div id="box">
+
+<div class="bg"><div class="dropover"></div><div class="bg-dropover"></div><div class="dropover-bottom"></div><div class="bg-dropover-bottom"></div><img src="images/bgsmall.png" class="logo-img" /><div class="bg-turnright"></div><div class="turnright"></div><div class="bg-turnright-bottom"></div><div class="turnright-bottom"></div><div class="bg-turnleft-bottom"></div><div class="turnleft-bottom"></div><div class="dropleft"></div><div class="bg-dropleft"></div><div class="dropright"></div><div class="bg-dropright"></div>
 
 <%= yield %>
+
+</div>
 
 </body>
 </html>

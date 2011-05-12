@@ -1,2 +1,10 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+document.ready = function() {
+	var state = {};
+	$('a').click(function() {
+		history.pushState(state, "Afrophon", $(this).attr('href'));
+	    return false;
+	});
+	$(window).bind('popstate', function(event) {
+ 		alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
+	});
+};
