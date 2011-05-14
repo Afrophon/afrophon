@@ -1,11 +1,39 @@
-<div id="Navigation">
-<ul>
-<li class="current"><a href="/">Neuigkeiten</a></li>
-<li class="normal"><a href="ueber-uns.html">&Uuml;ber uns</a></li>
-<li class="normal"><a href="referenzen.html">Referenzen</a></li>
-<li class="normal"><a href="kontakt.html">Kontakt</a></li>
-</ul>
+<% content_for :head do  %>
+<style type="text/css">
+#box {
+height: 1000px;
+}
+</style>
+<% end %>
+<div id="navigation" class="index-nav">
+<div class="current left"><a href="/">Neuigkeiten</a></div>
+<div class="normal"><a href="/ueber-uns.html">&Uuml;ber uns</a></div>
+<div class="normal"><a href="/referenzen.html">Referenzen</a></div>
+<%= links %>
+<div class="normal"><a href="/kontakt.html">Kontakt</a></div>
 </div>
-<div id="Inhalt">
-Hallo
+<div id="content">
+<div id="ss_banner">
+<div class="slide"><img src="images/test.png"/></div> 
+<div class="slide"><img src="images/alt.png"/></div> 
+<div class="slide"><img src="images/test.png"/></div> 
+<div class="slide"><img src="images/alt.png"/></div> 
+</div><div id="ss_controls"></div>
 </div>
+<div class="news">
+<div class="newsbox large">
+</div>
+<div class="newsboxes">
+<div class="newsbox">
+Test
+</div>
+<div class="newsbox">
+Test
+</div>
+<div class="newsbox">
+Test
+</div>
+</div>
+</div>
+
+<%= javascript_include_tag "slideshow.js" %>

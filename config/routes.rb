@@ -3,8 +3,11 @@ Afrophon::Application.routes.draw do
   root :to => "pages#index"
   
   match "/ueber-uns.html" => "pages#ueber-uns"
+  match "/referenzen.html" => "pages#referenzen"
+  match "/kontakt.html" => "pages#kontakt"
   
   match "/ajax/:path" => "pages#ajax"
+  match "/ajax" => "pages#ajaxindex"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

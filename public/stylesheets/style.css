@@ -7,7 +7,7 @@ html {
 
 body {
 	background: rgb(77,188,233);
-	font-family: "Lucida Grande", sans-serif;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 .bg {
 	margin: auto;
@@ -23,7 +23,7 @@ body {
 }
 .dropleft {
 	position: absolute;
-	left:0;top:160px;
+	left:13.2px;top:160px;
 	background:url(../images/down.png) repeat-y !important;
 	background: transparent;
 	width:129px;
@@ -39,7 +39,7 @@ body {
 }
 .dropright {
 	position: absolute;
-	right:-1px;top:160px;
+	right:12.2px;top:160px;
 	background:url(../images/down.png) repeat-y !important;
 	background: transparent;
 	width:129px;
@@ -105,7 +105,7 @@ body {
 }
 .turnleft-bottom {
 	position: absolute;
-	left:0;bottom:0;
+	left:0.2px;bottom:0;
 	background:url(../images/bgsmall.png) no-repeat !important;
 	width:160px;
 	height:160px;
@@ -121,7 +121,7 @@ body {
 	position: absolute;
 	left:0;bottom:0;
 	background:rgb(77,188,233);
-	width:160px;
+	width:159px;
 	height:160px;
 	z-index: 3;
 }
@@ -174,48 +174,104 @@ body {
 
 
 
-#Navigation {
-	margin: auto;
+#navigation {
+	margin: 0 auto;
 	text-align: center;
 	position: absolute;
-	top: 98px;right: 120px;
-	padding-left: 10px;
+	width:1021px;
+	left:90px;
+	padding: 10px 0 10px 0;
 	z-index: 3;
+	background:rgb(77,188,233);
+}
+#navigation div.left {
+	border-left: rgb(0, 153, 204) 1px dotted;
 }
 
-#Navigation ul li {
-	list-style-type: none;
-	font-size: 14pt;
+#navigation div {
+	font-size: 15px;
 	cursor: pointer;
+	letter-spacing: 0.5px;
 	display: inline-block;
-	letter-spacing: 1px;
-	margin: 0px 20px 0px 20px;
+	padding: 0px 20px 0px 20px;
+	border-right: rgb(0, 153, 204) 1px dotted;
+	text-transform: uppercase;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold; 
+}
+.normal a {
 	text-decoration: none;
-	text-transform: lowercase;
+	color: #000;
 }
-
-#Navigation ul li a {
-	text-decoration: none;
-	color: black;
+.normal.small {
+	font-weight: lighter !important;
+	letter-spacing: -1px !important;
+	font-size: 13px !important;
+	padding: 1.5px 10px 1.5px 10px !important;
 }
-
-#Navigation ul li#last {
-	margin: 0px 0px 0px 20px;
-}
-
-#Navigation ul li#first {
-	margin: 0px 20px 0px 0px;
-}
-
-#Navigation ul li.current a,
-#Navigation ul li.current a:visited,
-#Navigation ul li.current a:focus,
-#Navigation ul li.current a:active {
+.current a {
 	text-decoration: none;
 	color: white;
 }
 
+.index-nav {
+	top:368px;
+}
 
+#content {
+}
+
+
+#ss_banner {
+	position: absolute;
+	top:91px;
+	left:89px;
+	width:1023px;
+	height: 280px;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 3;
+}
+#ss_controls {
+	position: absolute;
+	top:340px;
+	left:90px;
+	height:10px;
+	width:1023px;
+	z-index: 11;
+	text-align: center;
+}
+.slide-control {
+	display: inline-block;
+	width:12px;
+	height:12px;
+	border-radius:12px;
+	background-color: white;
+	border:1px lightgrey solid;
+	margin: 3px;
+	cursor: pointer;
+}
+#slide-control-active {
+	background-color: grey;
+}
+.slide {
+	position: absolute;
+ 	background-color: rgba(0,0,0,0);
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-position-x: 0;
+ 	background-position-y: center;
+ 	width:100%;
+ 	height: 100%;
+	-moz-background-clip: content; 
+	-webkit-background-clip: content;
+	background-clip: content-box;  
+	z-index: 2;
+	padding: 0;
+}
+.slide.active {
+	z-index: 4;
+}
 
 #Inhalt {
 	text-align: left;
@@ -232,6 +288,132 @@ body {
 #Inhalt a {
 	text-decoration: underline;
 	color: black;	
+}
+
+/* Articles */
+
+.banner {
+	position: absolute;
+	top:90px;
+	left:89px;
+	height:77px;
+	overflow: hidden;
+	z-index: 4;
+}
+
+.digest {
+	position: absolute;
+	top:230px;left:118px;
+	margin-top: 12px;
+	height: 170px;
+	background: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.8);
+	background-color: transparent\9;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+	color: #000;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	width: 945px;
+	margin-left: 10px;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.article {
+	background: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.8);
+	background-color: transparent\9;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	padding: 30px;
+	position: absolute;
+	text-align: justify;
+	left: 128px;top:442px;
+	width:550px;
+	height:460px;
+	z-index: 10;
+	line-height: 21px;
+}
+.rellink {
+	background: #333;
+	position: absolute;
+	left: 739px;top:442px;
+	width: 264px;
+	height: 60px;
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	z-index: 10;
+	padding: 20px;
+	padding-right: 40px;
+	color: #FFF;
+}
+.rellink.picture {
+	width: 204px;
+	padding-left: 100px;
+	padding-right: 20px !important;
+}
+.rellink p {
+	font-size: 13px;
+	text-align: justify;
+	margin-top: 2px;
+	line-height:14px;
+	word-spacing: -2px;
+}
+
+/* News Boxes */
+.news {
+	position: absolute;
+	top:420px;
+	left: 110px;
+	z-index:9;
+}
+
+.newstitle {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.newsboxes {
+	position: relative;
+	left:480px;
+	top:10px;
+}
+
+.newsbox {
+	margin-top: 12px;
+	height: 120px;
+	background: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.8);
+	background-color: transparent\9;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+	zoom:1;
+	color: #000;
+	position: relative;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	width: 480px;
+	margin-left: 10px;
+	z-index: 10;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.newsbox.large {
+	height: 400px;
+	position: absolute;
+	margin-top: 22px;
+	width: 450px;
 }
 
 /* @group Footer */
