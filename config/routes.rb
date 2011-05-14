@@ -3,8 +3,10 @@ Afrophon::Application.routes.draw do
   root :to => "pages#index"
   
   match "/ueber-uns.html" => "pages#ueber-uns"
-  match "/referenzen.html" => "pages#referenzen"
+  match "/events.html" => "pages#events"
   match "/kontakt.html" => "pages#kontakt"
+  match "/bands.html" => "pages#bands"
+  match "/partner.html" => "pages#partner"
   
   match "/ajax/:path" => "pages#ajax"
   match "/ajax" => "pages#ajaxindex"

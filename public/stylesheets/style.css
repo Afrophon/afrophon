@@ -175,14 +175,19 @@ body {
 
 
 #navigation {
-	margin: 0 auto;
+	margin: -42px 0 0 0;
 	text-align: center;
 	position: absolute;
-	width:1021px;
-	left:90px;
+	width:992px;
+	left:104px;
 	padding: 10px 0 10px 0;
 	z-index: 3;
 	background:rgb(77,188,233);
+	z-index: 12;
+	opacity: 0.7;
+}
+.ap {
+	top:209px;
 }
 #navigation div.left {
 	border-left: rgb(0, 153, 204) 1px dotted;
@@ -269,6 +274,11 @@ body {
 	z-index: 2;
 	padding: 0;
 }
+.slide img {
+	width:97%;
+	margin-left: 1.5%;
+	margin-top: 1.5%;
+}
 .slide.active {
 	z-index: 4;
 }
@@ -294,11 +304,14 @@ body {
 
 .banner {
 	position: absolute;
-	top:90px;
-	left:89px;
-	height:77px;
+	top:105px;
+	left:104px;
+	height:107px;
 	overflow: hidden;
 	z-index: 4;
+}
+.banner img {
+	width: 992px;
 }
 
 .digest {
@@ -371,7 +384,7 @@ body {
 /* News Boxes */
 .news {
 	position: absolute;
-	top:420px;
+	top:380px;
 	left: 110px;
 	z-index:9;
 }
@@ -382,14 +395,14 @@ body {
 }
 
 .newsboxes {
-	position: relative;
-	left:480px;
+	position: absolute;
+	left:530px;
 	top:10px;
 }
 
 .newsbox {
 	margin-top: 12px;
-	height: 120px;
+	height: 90px;
 	background: rgba(255,255,255,0.8);
 	background-color: rgba(255,255,255,0.8);
 	background-color: transparent\9;
@@ -402,18 +415,74 @@ body {
 	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
-	width: 480px;
+	width: 390px;
 	margin-left: 10px;
 	z-index: 10;
 	cursor: pointer;
 	overflow: hidden;
+	font-size: 14px;
+	line-height: 16px;
+	padding: 10px 15px 15px 25px;
+	text-align: justify;
+}
+.newsbox img {
+	float: left;
+	margin-top: 16px;
+	margin-right: 10px;
+	position: relative;
+	top:6px;
+}
+.newsbox p {
+	position: relative;
+	top:6px;
+}
+.newsbox h2 {
+	font-weight: 700;
+	display: inline;
+	font-size: 26px;
+	position: absolute;
+	top:6px;
+}
+.newsbox.resize {
+	height: 20px;
+	position: relative;
+	margin-top: 22px;
+	width: 460px;
+}
+.newsbox.resize:not(.active) img {
+	display: none;
+}
+.newsbox.resize:not(.active) p {
+	display: none;
+}
+.newsbox.resize:not(.active) h2 {
+	position: absolute;
+	top:-6px;
 }
 
-.newsbox.large {
-	height: 400px;
+/* Events */
+
+#events {
 	position: absolute;
-	margin-top: 22px;
-	width: 450px;
+	left: 118px;
+	top:240px;
+	z-index: 11;
+	width: 969px;
+	overflow: hidden;
+}
+.line {
+	white-space: nowrap;
+}
+.event {
+	background-color: #fff;
+	width:285px;
+	height: 285px;
+	display: inline-block;
+	margin: 20px 20px 0 0;
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 }
 
 /* @group Footer */
