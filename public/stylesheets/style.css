@@ -484,6 +484,12 @@ body {
 	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 }
+#scrollbar {
+	width: 969px;
+	height: 30px;
+	background-color: #AAA;
+	margin-top: 20px;
+}
 
 /* @group Footer */
 
