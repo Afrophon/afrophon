@@ -8,6 +8,8 @@ Afrophon::Application.routes.draw do
   match "/bands.html" => "pages#bands"
   match "/partner.html" => "pages#partner"
   
+  match "/findusmc.html" => "pages#findusmc"
+  
   match "/ajax/:path" => "pages#ajax"
   match "/ajax" => "pages#ajaxindex"
   

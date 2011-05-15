@@ -8,6 +8,10 @@ $(function() {
 	
 	lines.css('left', 0);
 	
+	$(window).bind('selectstart', function () {
+		return false;
+	});
+	
 	scrolldabar = function (e) {
 		var offset = e.pageX - left;
 		if (offset >= barwidth-wdth) {
