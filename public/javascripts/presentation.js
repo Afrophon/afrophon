@@ -3,6 +3,8 @@ $(function() {
 	var slidenr = 0;
 	var slidecount = pres.children().size() - 1;
 	
+	$(window).unbind('selectstart');
+	
 	$('#control-left').click(function () {
 		slidenr--;
 		if (slidenr >= 0)
