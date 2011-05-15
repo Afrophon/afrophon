@@ -468,10 +468,13 @@ body {
 	top:240px;
 	z-index: 11;
 	width: 969px;
+	height: 969px;
 	overflow: hidden;
 }
 .line {
+	position: relative;
 	white-space: nowrap;
+	width: 1200px;
 }
 .event {
 	background-color: #fff;
@@ -489,6 +492,20 @@ body {
 	height: 30px;
 	background-color: #AAA;
 	margin-top: 20px;
+	position: absolute;
+	top:630px;
+	z-index: 4;
+}
+#handle {
+	width: 160px;
+	height: 30px;
+	background-color: #FFF;
+	margin-top: 20px;
+	margin-left: -80px;
+	z-index: 5;
+	position: absolute;
+	top:630px;
+	left:80px;
 }
 
 /* @group Footer */
