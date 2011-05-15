@@ -12,8 +12,16 @@ $(function() {
 		return false;
 	});
 	
+	$('#events').bind('mousewheel', function(event, delta) {
+		scrolltopos(parseInt(handle.css('left')) - delta * 64);
+		return false;
+	});
+	
 	scrolldabar = function (e) {
-		var offset = e.pageX - left;
+		scrolltopos(e.pageX - left);
+	};
+	
+	scrolltopos = function (offset) {
 		if (offset >= barwidth-wdth) {
 			handle.css('left', barwidth-wdth);
 			lines.css('left', (barwidth-wdth) * partial);
