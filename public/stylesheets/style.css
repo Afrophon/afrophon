@@ -558,18 +558,16 @@ body {
 }
 #pages {
 	position: relative;
-	white-space: nowrap;
+	width: 10000px;
 	font-size: 0;
+	white-space: nowrap;
 }
 .page {
-	display: -moz-inline-stack; 
-	display: inline-block; 
-	zoom: 1; 
-	*display: inline;
+	display: block; 
+	float: left;
 	background-color: #aaa;
 	width: 864px;
 	height: 540px;
-	min-height: 540px;
 	margin-right: 10px;
 	font-size: 14px;
 }

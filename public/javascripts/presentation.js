@@ -6,19 +6,19 @@ $(function() {
 	$('#control-left').click(function () {
 		slidenr--;
 		if (slidenr >= 0)
-			pres.animate({'left': -874 * slidenr}, 1000);
+			pres.stop().animate({'left': -874 * slidenr}, 1000);
 		else {
 			slidenr = slidecount;
-			pres.animate({'left': -874 * slidenr}, 1000);
+			pres.stop().animate({'left': -874 * slidenr}, 1000);
 		}
 	});
 	$('#control-right').click(function () {
 		slidenr++;
 		if (slidenr <= slidecount)
-			pres.animate({'left': -874 * slidenr}, 1000);
+			pres.stop().animate({'left': -874 * slidenr}, 1000);
 		else {
 			slidenr = 0;
-			pres.animate({'left': 0}, 1000);
+			pres.stop().animate({'left': 0}, 1000);
 		}
 	});
 });
