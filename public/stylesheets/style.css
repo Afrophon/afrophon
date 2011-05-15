@@ -520,6 +520,14 @@ body {
 	top:630px;
 	left:80px;
 }
+#ovf {
+	position: absolute !important;
+	top:260px;
+	left:118px;
+	overflow: hidden;
+	width: 969px;
+	height: 669px;
+}
 #animation {
 	position: absolute !important;
 	top:260px;
