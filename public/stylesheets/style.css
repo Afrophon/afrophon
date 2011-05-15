@@ -541,6 +541,19 @@ body {
 	height: 669px;
 	z-index: 14;
 }
+
+/* Presentation */
+
+#animation h2 {
+	margin-left: 40px;
+	margin-top: 30px;
+}
+
+#presentation {
+	width: 900px;
+	height: 640px;
+}
+
 /* @group Footer */
 
 #Footer {
