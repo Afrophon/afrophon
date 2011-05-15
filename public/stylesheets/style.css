@@ -11,6 +11,9 @@ body {
 	padding: 0;
 	border: none;
 }
+a {
+	color: #000;
+}
 .bg {
 	margin: auto;
 	position: absolute;
@@ -114,42 +117,14 @@ body {
 .index-nav {
 	top:368px;
 }
-
-#content {
-}
-
-
 #ss_banner {
 	position: absolute;
 	top:91px;
 	left:89px;
 	width:1023px;
 	height: 280px;
-	cursor: pointer;
 	overflow: hidden;
 	z-index: 3;
-}
-#ss_controls {
-	position: absolute;
-	top:340px;
-	left:90px;
-	height:10px;
-	width:1023px;
-	z-index: 11;
-	text-align: center;
-}
-.slide-control {
-	display: inline-block;
-	width:12px;
-	height:12px;
-	border-radius:12px;
-	background-color: white;
-	border:1px lightgrey solid;
-	margin: 3px;
-	cursor: pointer;
-}
-#slide-control-active {
-	background-color: grey;
 }
 .slide {
 	position: absolute;
@@ -250,6 +225,7 @@ body {
 	line-height: 21px;
 }
 .rellink {
+	text-decoration: none;
 	background: #333;
 	position: absolute;
 	left: 729px;top:452px;

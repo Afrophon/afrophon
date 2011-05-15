@@ -9,6 +9,9 @@ Afrophon::Application.routes.draw do
   match "/partner.html" => "pages#partner"
   
   match "/findusmc.html" => "event#findusmc"
+  match "/indierocknight.html" => "event#indierocknight"
+  match "/libellaswing.html" => "event#libellaswing"
+  match "/meissentanzt.html" => "event#meissentanzt"
   
   match "/ajax/:path" => "pages#ajax"
   match "/ajax/event/:path" => "event#ajax"
