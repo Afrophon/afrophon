@@ -14,7 +14,7 @@ $(function() {
 			animation.offset(element.offset()).width(285).height(285);
 			$.get("ajax/event/nil"+element.attr('href'), function(data){ 
 				history.pushState(state, "Afrophon", element.attr('href'));
-				animation.css({'z-index':15, position:'absolute'}).html(data);
+				animation.css({'z-index':15}).html(data);
 				animation.animate({width: 969, height: 669, left:0, top:0}, 1000, function () {
 					$('#events').remove();
 				});

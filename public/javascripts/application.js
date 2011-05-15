@@ -1,11 +1,9 @@
 document.ready = function() {
-	var pageheights = {'/' : 910, '/ueber-uns.html' : 1100,  '/events.html' : 1100};
 	var events = ['/findusmc.html'];
 	
 	var state = {};
 	bindevents = function () {
 		window.scrollTo(0, 0);
-		$('#box').height(pageheights[document.location.pathname]);
 		$('a').not('.event').click(function() {
 			history.pushState(state, "Afrophon", $(this).attr('href'));
 			$.get("ajax"+$(this).attr('href'), function(data){ 

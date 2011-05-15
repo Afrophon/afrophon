@@ -1,13 +1,15 @@
 html {
-	background: rgb(77,188,233);
 	color: #000;
-	overflow: hidden;
+	overflow-x: auto;
 	overflow-y: scroll;
 }
 
 body {
-	background: rgb(77,188,233);
+	background: url(../images/over.png) repeat-x;
+	background-color: rgb(0, 153, 204);
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: 0;
+	border: none;
 }
 .bg {
 	margin: auto;
@@ -15,142 +17,16 @@ body {
 	z-index: 2;
 	height: 100%;
 	width: 100%;
-	background: rgb(0, 153, 204);
 }
 .logo-img {
 	position: absolute;
+	left:171px;
+	top:-8px;
 	z-index: 10;
 	background: url(../images/bgsmall.png);
-	width: 698px;
+	width: 527px;
 	height: 160px;
-}
-.bg-logo {
-	position: absolute;
-	top:0px;
-	z-index: 9;
-	background: rgb(77,188,233);
-	width: 698px;
-	height: 160px;
-}
-.dropleft {
-	position: absolute;
-	left:13.2px;top:160px;
-	background:url(../images/down.png) repeat-y !important;
-	width:129px;
-	height:100%;
-	z-index: 1;
-}
-.bg-dropleft {
-	position: absolute;
-	left:0;top:160px;
-	background: rgb(77,188,233);
-	width:129px;
-	height:100%;
-}
-.dropright {
-	position: absolute;
-	right:12.2px;top:160px;
-	background:url(../images/down.png) repeat-y !important;
-	width:129px;
-	height:100%;
-	-moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-    z-index: 1;
-}
-.bg-dropright {
-	position: absolute;
-	right:-1px;top:160px;
-	background: rgb(77,188,233);
-	width:129px;
-	height:100%;
-}
-.turnright {
-	position: absolute;
-	right:-1px;top:0;
-	background:url(../images/bgsmall.png) no-repeat !important;
-	width:160px;
-	height:160px;
-	-moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-    z-index: 3;
-}
-.bg-turnright {
-	position: absolute;
-	right:-2px;top:0;
-	background:rgb(77,188,233);
-	width:161px;
-	height:160px;
-	z-index: 2;
-}
-.turnright-bottom {
-	position: absolute;
-	right:-1px;bottom:0;
-	background:url(../images/bgsmall.png) no-repeat !important;
-	width:160px;
-	height:160px;
-	-moz-transform: scale(-1, -1);
-    -o-transform: scale(-1, -1);
-    -webkit-transform: scale(-1, -1);
-    transform: scale(-1, -1);
-    filter: FlipV FlipH;
-    -ms-filter: "FlipV" "FlipH";
-    z-index: 4;
-}
-.bg-turnright-bottom {
-	position: absolute;
-	right:-1px;bottom:0;
-	background:rgb(77,188,233);
-	width:160px;
-	height:160px;
-	z-index: 3;
-}
-.turnleft-bottom {
-	position: absolute;
-	left:0.2px;bottom:0;
-	background:url(../images/bgsmall.png) no-repeat !important;
-	width:160px;
-	height:160px;
-	-moz-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-    filter: FlipV;
-    -ms-filter: "FlipV";
-    z-index: 4;
-}
-.bg-turnleft-bottom {
-	position: absolute;
-	left:0;bottom:0;
-	background:rgb(77,188,233);
-	width:159px;
-	height:160px;
-	z-index: 3;
-}
-.dropover {
-	position: absolute;
-	top:0;left:698px;
-	background: url(../images/over.png) repeat-x;
-	height: 160px;
-	width:100%;
-	z-index: 2;
-}
-
-.bg-dropover {
-	position: absolute;
-	top:0;left:698px;
-	background: rgb(77,188,233);
-	height: 160px;
-	width:100%;
-}
-.dropover-bottom {
+}.dropover-bottom {
 	position: absolute;
 	bottom:0;left:0;
 	background: url(../images/over.png) repeat-x;
@@ -175,13 +51,9 @@ body {
 }
 #box {
 	width: 1200px;
-    height: 672px;
 	position: relative;
    	margin: auto auto;
-	overflow: hidden;
 }
-
-
 
 #navigation {
 	margin: -42px 0 0 0;
@@ -193,17 +65,17 @@ body {
 	z-index: 3;
 	background:rgb(77,188,233);
 	z-index: 12;
-	opacity: 0.7;
-	filter:alpha(opacity=70);
+	opacity: 0.8;
+	filter:alpha(opacity=80);
 }
 .ap {
-	top:222px;
+	top:368px;
 }
 #navigation div.left {
 	border-left: rgb(0, 153, 204) 1px dotted;
 }
 
-#navigation div {
+#navigation .current,#navigation .normal {
 	font-size: 15px;
 	cursor: pointer;
 	letter-spacing: 0.5px;
@@ -213,6 +85,16 @@ body {
 	text-transform: uppercase;
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: bold; 
+}
+#catnav {
+	height: 15px;
+}
+#navigation #catnav .current,#navigation #catnav .normal{
+	font-weight:normal;
+	font-size: 14px;
+	position: relative;
+	top:-5px;
+	padding: 0px 10px 0px 10px;
 }
 .normal a {
 	text-decoration: none;
@@ -326,7 +208,7 @@ body {
 
 .digest {
 	position: absolute;
-	top:240px;left:108px;
+	top:386px;left:108px;
 	margin-top: 12px;
 	height: 170px;
 	background: rgba(255,255,255,0.8);
@@ -358,7 +240,7 @@ body {
 	padding: 30px;
 	position: absolute;
 	text-align: justify;
-	left: 128px;top:472px;
+	left: 118px;top:618px;
 	width:550px;
 	height:460px;
 	z-index: 10;
@@ -476,10 +358,10 @@ body {
 #events {
 	position: absolute;
 	left: 118px;
-	top:240px;
+	top:386px;
 	z-index: 11;
 	width: 969px;
-	height: 969px;
+	height: 709px;
 	overflow: hidden;
 }
 .line {
@@ -520,16 +402,16 @@ body {
 	left:80px;
 }
 #ovf {
-	position: absolute !important;
-	top:260px;
+	position: absolute;
+	top:406px;
 	left:118px;
 	overflow: hidden;
 	width: 969px;
 	height: 669px;
 }
 #animation {
-	position: absolute !important;
-	top:260px;
+	position: absolute;
+	top:406px;
 	left:118px;
 	background-color: #fff;
 	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
