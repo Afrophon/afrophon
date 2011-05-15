@@ -1,5 +1,6 @@
 document.ready = function() {
 	var pageheights = {'/' : 910, '/ueber-uns.html' : 1100,  '/events.html' : 1100};
+	var events = ['/findusmc.html'];
 	
 	var state = {};
 	bindevents = function () {
@@ -16,7 +17,10 @@ document.ready = function() {
 	};
 	bindevents();
 	$(window).bind('popstate', function(event) {
-		$.get("ajax"+document.location.pathname, function(data){ 
+		var path = "ajax"+document.location.pathname;
+		if (jQuery.inArray(document.location.pathname, events) != -1)
+			path = "ajax/event"+document.location.pathname;
+		$.get(path, function(data){ 
 			$('.dyncontent').html(data);
 			bindevents();
 		});

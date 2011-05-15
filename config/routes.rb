@@ -8,9 +8,11 @@ Afrophon::Application.routes.draw do
   match "/bands.html" => "pages#bands"
   match "/partner.html" => "pages#partner"
   
-  match "/findusmc.html" => "pages#findusmc"
+  match "/findusmc.html" => "event#findusmc"
   
   match "/ajax/:path" => "pages#ajax"
+  match "/ajax/event/:path" => "event#ajax"
+  match "/ajax/event/nil/:path" => "event#ajaxnil"
   match "/ajax" => "pages#ajaxindex"
   
   # The priority is based upon order of creation:
