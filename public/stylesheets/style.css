@@ -550,8 +550,44 @@ body {
 }
 
 #presentation {
-	width: 900px;
-	height: 640px;
+	width: 864px;
+	height: 540px;
+	position: absolute;
+	left: 50px;
+	overflow: hidden;
+}
+#pages {
+	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+}
+.page {
+	display: -moz-inline-stack; 
+	display: inline-block; 
+	zoom: 1; 
+	*display: inline;
+	background-color: #aaa;
+	width: 864px;
+	height: 540px;
+	min-height: 540px;
+	margin-right: 10px;
+	font-size: 14px;
+}
+#control-right {
+	width:30px;
+	height:30px;
+	background-color: black;
+	position: absolute;
+	top:335px;
+	left:919px;
+}
+#control-left {
+	width:30px;
+	height:30px;
+	background-color: black;
+	position: absolute;
+	top:335px;
+	left:15px;
 }
 
 /* @group Footer */
