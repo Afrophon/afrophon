@@ -564,7 +564,6 @@ body {
 .page {
 	display: block; 
 	float: left;
-	background-color: #aaa;
 	width: 864px;
 	height: 540px;
 	margin-right: 10px;
