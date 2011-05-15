@@ -227,7 +227,11 @@ body {
 	overflow: hidden;
 	padding: 10px;
 }
-
+.digest img {
+	width: 850px;
+	margin-top:14px;
+	margin-left:48px;
+}
 .article {
 	background: rgba(255,255,255,0.8);
 	background-color: rgba(255,255,255,0.8);
@@ -242,15 +246,14 @@ body {
 	text-align: justify;
 	left: 118px;top:618px;
 	width:550px;
-	height:460px;
 	z-index: 10;
 	line-height: 21px;
 }
 .rellink {
 	background: #333;
 	position: absolute;
-	left: 739px;top:442px;
-	width: 264px;
+	left: 729px;top:442px;
+	width: 294px;
 	height: 60px;
 	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
@@ -260,6 +263,12 @@ body {
 	padding: 20px;
 	padding-right: 40px;
 	color: #FFF;
+}
+
+.bg-rlink {
+	position: absolute;
+	left: 729px;top:618px;
+	
 }
 .rellink.picture {
 	width: 204px;
