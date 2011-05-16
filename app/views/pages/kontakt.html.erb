@@ -14,7 +14,7 @@ height: 1000px;
 </div>
 <div id="content">
 <div class="banner"><img src="images/kontakt/banner.png"/></div> 
-<form action="" method="post" id="kontakt">
+<% form_tag( { :action => "kontakt" }, :id => "kontakt" ) do %> 
 <fieldset id="basics">
 <p>
 <label for="name">Name</label>
@@ -35,9 +35,8 @@ height: 1000px;
 <textarea name="nachricht" id="nachricht" required></textarea>
 </p>
 </fieldset>
-
 <button type="submit" value="Abschicken" >Abschicken</button>
-</form>
+<% end %> 
 <img class="bg-form" src="images/kontakt/bg-rlink.png" />
 
 </div>
