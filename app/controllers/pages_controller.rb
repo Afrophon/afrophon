@@ -10,7 +10,8 @@ def ajaxindex
 	render 'index.html.erb', :layout => nil
 end
 def kontakt
-	Pony.mail(:to => 'lcstwllr@gmail.com', :via => :smtp, :via_options => {
+  begin
+	Pony.mail(:from => params[:email], :to => 'lcstwllr@gmail.com', :via => :smtp, :via_options => {
    		:address        => "smtp.sendgrid.net",
   		:port           => "25",
   		:authentication => :plain,
@@ -18,5 +19,7 @@ def kontakt
   		:password       => ENV['SENDGRID_PASSWORD'],
   		:domain         => ENV['SENDGRID_DOMAIN']
   	})
+  rescue
+  end
 end
 end

@@ -18,6 +18,8 @@ height: 1000px;
 <fieldset id="basics">
 <p>
 <label for="name">Name</label>
+<%= label_tag(:name, "Name") %>
+<%= text_field_tag(:name, :id => "name") %>
 <input type="text" name="name" id="name" size="30" placeholder="Peter Enterprise" required />
 </p>
 <p>
