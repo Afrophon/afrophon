@@ -346,7 +346,7 @@ a {
 #events {
 	position: absolute;
 	left: 118px;
-	top:402px;
+	top:382px;
 	z-index: 11;
 	width: 964px;
 	height: 709px;
@@ -478,7 +478,9 @@ a {
 	background-color: transparent\9;
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
 	zoom: 1;
-	width: 680px;
+	width: 684px;
+	height: 304px;
+	max-height: 304px;
 	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
@@ -539,16 +541,21 @@ a {
 }
 
 #kontakt fieldset#nachricht textarea {
-	height: 136px;
-	max-height: 136px;
+	height: 154px;
+	max-height: 154px;
+	min-height: 154px;
 	overflow: auto;
 	width: 265px;
 	max-width: 265px;
 	min-width: 265px;
+    resize: none;
 	margin-top: 2px;
 }
 
 #kontakt button {
+	position: absolute;
+	right:60px;
+	bottom:30px;
 	width: 150px;
 	height: 37px;
 	cursor: pointer;
@@ -557,9 +564,12 @@ a {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC323232,endColorstr=#CC323232);
 	z-index: 5;
 	color: #fff;
-	margin-bottom: 20px;
-	margin-left: 438px;
 }				
+.bg-form {
+	position: absolute;
+	left: 802px;
+	top:406px;
+}
 
 /* @group Footer */
 
