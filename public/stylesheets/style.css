@@ -466,6 +466,101 @@ a {
 	left:15px;
 }
 
+/* Kontakt */
+
+#kontakt {
+	position: absolute;
+	top:406px;
+	left:118px;
+	padding-top: 30px;
+	background-color: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.8);
+	background-color: transparent\9;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+	zoom: 1;
+	width: 680px;
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	z-index: 5;
+}
+	
+#kontakt fieldset {
+	border: none;	
+	float: left;
+	display: inline;
+	width: 245px;
+}		
+
+#kontakt p {
+	margin-bottom: 15px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#kontakt label {
+	display: block;
+	margin-bottom: 3px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+	
+#kontakt fieldset input, textarea {		
+	border: 1px solid #ddd;
+	padding: 3px;
+	padding-top: 5px;
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    -webkit-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+    cursor: text;
+}
+
+#kontakt fieldset#basics {
+  margin-left: 42px;
+}
+
+#kontakt fieldset#nachricht {
+	margin-left: 28px;
+}
+
+#kontakt fieldset#basics input {
+    width: 235px;
+}
+
+#kontakt fieldset#nachricht textarea {
+	height: 136px;
+	max-height: 136px;
+	overflow: auto;
+	width: 265px;
+	max-width: 265px;
+	min-width: 265px;
+	margin-top: 2px;
+}
+
+#kontakt button {
+	width: 150px;
+	height: 37px;
+	cursor: pointer;
+	border: none;
+	background-color: rgba(50,50,50,0.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC323232,endColorstr=#CC323232);
+	z-index: 5;
+	color: #fff;
+	margin-bottom: 20px;
+	margin-left: 438px;
+}				
+
 /* @group Footer */
 
 #Footer {
