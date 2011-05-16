@@ -10,7 +10,7 @@ class Kontakt
   
   def sendmail
   	if self.valid?
-		Pony.mail(:from => self.email, :to => 'lcstwllr@gmail.com', :subject => 'Kontakt', :html_body => 'Name: ' + self.name + '<br> Telefon: ' + self.telefon + '<br> Nachricht: ' + self.nachricht, :via => :smtp, :via_options => {
+		Pony.mail(:from => self.email, :to => 'lcstwllr@gmail.com', :subject => 'Kontakt', :html_body => 'Name: ' + self.name + '<br>Telefon: ' + self.telefon + '<br>Nachricht: ' + self.nachricht, :via => :smtp, :via_options => {
    			:address        => "smtp.sendgrid.net",
   			:port           => "25",
   			:authentication => :plain,

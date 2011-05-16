@@ -18,7 +18,7 @@ def kontakt
 		@kontakt.telefon = params[:telefon]
 		@kontakt.nachricht = params[:nachricht]
 		@kontakt.sendmail
-		@nachricht = "Wir haben deine Nachricht bekommen und werden uns in Kürze bei dir melden. Vielen Dank!"
+		@nachricht = "Wir haben deine Nachricht bekommen <br /> und werden uns in Kürze bei dir melden. Vielen Dank!"
 		@kontakt.errors.full_messages.each do |error|
     		if (error == "Email can't be blank")
     	    	@nachricht = "Gib bitte eine E-Mail Adresse an!"
