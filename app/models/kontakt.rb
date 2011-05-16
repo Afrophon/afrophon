@@ -1,5 +1,4 @@
 class Kontakt
-  require 'pony'
   include ActiveModel::Validations
   include ActiveModel::Conversion
   extend ActiveModel::Naming
