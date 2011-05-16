@@ -15,5 +15,6 @@ def kontakt
 	@kontakt.name = params[:name]
 	@kontakt.telefon = params[:telefon]
 	@kontakt.nachricht = params[:nachricht]
+	@kontakt.sendmail
 end
 end
