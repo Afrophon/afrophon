@@ -7,6 +7,10 @@ Afrophon::Application.routes.draw do
   match "/kontakt.html" => "pages#kontakt"
   match "/bands.html" => "pages#bands"
   match "/unterstuetzer.html" => "pages#unterstuetzer"
+  match "/sponsoren.html" => "pages#sponsoren"
+  match "/bands.html" => "pages#bands"
+  match "/anteilseigner.html" => "pages#anteilseigner"
+  match "/investorrelations.html" => "pages#investorrelations"
   
   match "/findusmc.html" => "event#findusmc"
   match "/indierocknight.html" => "event#indierocknight"

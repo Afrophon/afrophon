@@ -576,6 +576,92 @@ a {
 	bottom:30px;
 	line-height: 20px;
 }
+#kontakt-informationen {
+	position: absolute;
+	top:746px;
+	left:118px;
+	margin-top: 20px;
+	float: left;
+	background-color: rgba(255,255,255,0.8);
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	background-color: transparent\9;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+	zoom:1;
+	width: 364px;
+	height: 114px;
+	line-height: 1.2;
+}
+
+#kontakt-informationen p#adresse {
+	margin-left: 42px;
+	margin-top: 30px;
+	float: left;
+}
+
+#kontakt-informationen p#contact {
+	margin-top: 48px;
+	margin-left: 20px;
+	float: left;
+}
+#social {
+	position: absolute;
+	top:746px;
+	left:494px;
+	float: right;
+	background-color: rgba(255,255,255,0.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	width: 244px;
+	height: 114px;
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-right: 29px;
+	padding-right: 19px;
+}
+	
+#social a {
+	width: 64px;
+	height: 64px;
+	float: right;
+	margin-top: 22px;
+	padding-right: 8px;
+}
+
+#twitter {
+	background: url(../images/kontakt/twitter.png) no-repeat scroll 0 0;
+}
+
+#facebook {
+	background: url(../images/kontakt/facebook.png) no-repeat scroll 0 0;
+}
+
+#youtube {
+	background: url(../images/kontakt/youtube.png) no-repeat scroll 0 0;
+}
+#rightside {
+	position: absolute;
+	top:746px;
+	left:784px;
+	float: right;
+	background-color: rgba(255,255,255,0.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	width: 265px;
+	height: 114px;
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-right: 29px;
+	padding-right: 19px;
+}
 
 /* @group Footer */
 
