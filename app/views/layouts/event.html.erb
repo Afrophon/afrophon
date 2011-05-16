@@ -5,6 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <%= stylesheet_link_tag "style.css" %>
 <%= javascript_include_tag "application.js" %>
+<%= javascript_include_tag "special.js" %>
 <!--<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" %>-->
 <%= javascript_include_tag "jquery-1.6.min.js" %>
 <%= yield :head %>
@@ -21,11 +22,17 @@ height: 1100px;
 
 <div class="dyncontent">
 <div id="navigation" class="ap">
-<div class="normal"><a href="/">Neuigkeiten</a></div>
+<div class="normal left"><a href="/">Neuigkeiten</a></div>
 <div class="normal"><a href="/ueber-uns.html">&Uuml;ber uns</a></div>
 <div class="current"><a href="/events.html">Events</a></div>
-<div class="normal"><a href="/partner.html">Unterstützer</a></div>
+<div class="normal"><a href="/unterstuetzer.html">Unterstützer</a></div>
 <div class="normal"><a href="/kontakt.html">Kontakt</a></div>
+<div id="catnav">
+<div class="normal first"><a href="/findusmc.html" class="evlink">Findus MC</a></div>
+<div class="normal"><a href="/libellaswing.html" class="evlink">Libella Swing</a></div>
+<div class="normal"><a href="/meissentanzt.html" class="evlink">Meissen Tanzt</a></div>
+<div class="normal"><a href="/indierocknight.html" class="evlink">Indie Rock Night</a></div>
+</div>
 </div>
 <div id="animation">
 <%= yield %>

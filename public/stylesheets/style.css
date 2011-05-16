@@ -74,6 +74,9 @@ a {
 .ap {
 	top:375px;
 }
+.doublenav{
+	top:360px;
+}
 #navigation div.left {
 	border-left: rgb(0, 153, 204) 1px dotted;
 }
@@ -343,7 +346,7 @@ a {
 #events {
 	position: absolute;
 	left: 118px;
-	top:386px;
+	top:402px;
 	z-index: 11;
 	width: 964px;
 	height: 709px;
@@ -367,24 +370,29 @@ a {
 	cursor: pointer;
 }
 #scrollbar {
-	width: 969px;
+	width: 964px;
 	height: 30px;
-	background-color: #AAA;
+	background-color: rgba(255,255,255,0.8);
 	margin-top: 20px;
 	position: absolute;
-	top:630px;
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	top:627px;
 	z-index: 4;
 }
 #handle {
-	width: 160px;
+	width: 240px;
 	height: 30px;
-	background-color: #FFF;
+	background-color: rgb(77,188,233);
 	margin-top: 20px;
-	margin-left: -80px;
+	margin-left: -120px;
 	z-index: 5;
+	cursor: pointer;
 	position: absolute;
-	top:630px;
-	left:80px;
+	top:627px;
+	left:120px;
 }
 #ovf {
 	position: absolute;
@@ -393,6 +401,10 @@ a {
 	overflow: hidden;
 	width: 969px;
 	height: 669px;
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 }
 #animation {
 	position: absolute;
@@ -406,6 +418,7 @@ a {
 	width: 964px;
 	height: 669px;
 	z-index: 14;
+	background: rgb(219, 242, 251);
 }
 
 /* Presentation */

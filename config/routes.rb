@@ -6,7 +6,7 @@ Afrophon::Application.routes.draw do
   match "/events.html" => "pages#events"
   match "/kontakt.html" => "pages#kontakt"
   match "/bands.html" => "pages#bands"
-  match "/partner.html" => "pages#partner"
+  match "/unterstuetzer.html" => "pages#unterstuetzer"
   
   match "/findusmc.html" => "event#findusmc"
   match "/indierocknight.html" => "event#indierocknight"

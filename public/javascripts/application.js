@@ -6,7 +6,7 @@ document.ready = function() {
 	bindevents = function () {
 		window.scrollTo(0, 0);
 		$('#box').height(pageheights[document.location.pathname]);
-		$('a').not('.event').click(function() {
+		$('a').not('.evlink').click(function() {
 			history.pushState(state, "Afrophon", $(this).attr('href'));
 			$.get("ajax"+$(this).attr('href'), function(data){ 
 				$('.dyncontent').html(data);

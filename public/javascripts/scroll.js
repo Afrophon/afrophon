@@ -3,7 +3,7 @@ $(function() {
 	var left = handle.offset().left;
 	var wdth = handle.width()/2;
 	var lines = $('.line');
-	var barwidth = 969;
+	var barwidth = 964;
 	var partial =  -1 * (lines.width() - barwidth) / (barwidth - wdth * 2);
 	
 	lines.css('left', 0);
