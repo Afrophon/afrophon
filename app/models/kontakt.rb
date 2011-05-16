@@ -1,4 +1,5 @@
 class Kontakt
+  require 'pony'
   include ActiveModel::Validations
   include ActiveModel::Conversion
   extend ActiveModel::Naming
@@ -10,14 +11,16 @@ class Kontakt
   validates_format_of :email, :with => /\A[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\z/
   
   def initialize(attributes = {})
-	Pony.mail(:from => @email, :to => 'lcstwllr@gmail.com', :via => :smtp, :via_options => {
-   		:address        => "smtp.sendgrid.net",
-  		:port           => "25",
-  		:authentication => :plain,
-  		:user_name      => ENV['SENDGRID_USERNAME'],
-  		:password       => ENV['SENDGRID_PASSWORD'],
-  		:domain         => ENV['SENDGRID_DOMAIN']
-  	})
+  	if valid?
+		Pony.mail(:from => @email, :to => 'lcstwllr@gmail.com', :via => :smtp, :via_options => {
+   			:address        => "smtp.sendgrid.net",
+  			:port           => "25",
+  			:authentication => :plain,
+  			:user_name      => ENV['SENDGRID_USERNAME'],
+  			:password       => ENV['SENDGRID_PASSWORD'],
+  			:domain         => ENV['SENDGRID_DOMAIN']
+  		})
+  	end
   end
   
   def persisted?
