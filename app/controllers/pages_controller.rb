@@ -10,11 +10,16 @@ def ajaxindex
 	render 'index.html.erb', :layout => nil
 end
 def kontakt
+  begin
 	@kontakt = Kontakt.new
 	@kontakt.email = params[:email]
 	@kontakt.name = params[:name]
 	@kontakt.telefon = params[:telefon]
 	@kontakt.nachricht = params[:nachricht]
 	@kontakt.sendmail
+  	render 'success.html.erb'
+  rescue
+  	render 'error.html.erb'
+  end
 end
 end

@@ -570,6 +570,11 @@ a {
 	left: 802px;
 	top:406px;
 }
+#message {
+	position: absolute;
+	right: 230px;
+	bottom:36px;
+}
 
 /* @group Footer */
 
