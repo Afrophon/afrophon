@@ -20,6 +20,7 @@ class Kontakt
   			:domain         => ENV['SENDGRID_DOMAIN']
   		})
   	  rescue
+  	  	
   	  end
   	end
   end
