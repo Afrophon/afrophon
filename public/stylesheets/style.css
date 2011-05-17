@@ -396,7 +396,7 @@ a {
 }
 #ovf {
 	position: absolute;
-	top:406px;
+	top:402px;
 	left:118px;
 	overflow: hidden;
 	width: 969px;
@@ -408,7 +408,7 @@ a {
 }
 #animation {
 	position: absolute;
-	top:406px;
+	top:402px;
 	left:118px;
 	background-color: #fff;
 	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
@@ -424,8 +424,10 @@ a {
 /* Presentation */
 
 #animation h2 {
-	margin-left: 40px;
-	margin-top: 30px;
+	margin-left: 50px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	color: #FFF;
 }
 
 #presentation {
@@ -433,7 +435,9 @@ a {
 	height: 540px;
 	position: absolute;
 	left: 50px;
+	top:86px;
 	overflow: hidden;
+	background-color: rgb(219, 242, 251);
 }
 #pages {
 	position: relative;
@@ -448,22 +452,31 @@ a {
 	height: 540px;
 	margin-right: 10px;
 	font-size: 14px;
+	background-color: white;
 }
 #control-right {
 	width:30px;
-	height:30px;
-	background-color: black;
+	height:54px;
+	background-color: rgba(0,0,0,0.6);
 	position: absolute;
-	top:335px;
-	left:919px;
+	top:325px;
+	left:884px;
+	text-align: center;
+	padding-top: 26px;
+	font-size: 18px;
+	color: rgba(0,0,0,0.9);
 }
 #control-left {
 	width:30px;
-	height:30px;
-	background-color: black;
+	height:54px;
+	background-color: rgba(0,0,0,0.6);
 	position: absolute;
-	top:335px;
-	left:15px;
+	top:325px;
+	left:50px;
+	text-align: center;
+	padding-top: 26px;
+	font-size: 18px;
+	color: rgba(0,0,0,0.9);
 }
 
 /* Kontakt */
