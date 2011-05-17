@@ -10,7 +10,7 @@ class Newsletter
   
   def sendmail
   	if self.valid?
-		Pony.mail(:from => self.email, :to => 'afrophon@gmail.com', :subject => 'Newsletter-Anmeldung', :html_body => 'Name: ' + self.name + '<br>Email: ' + self.email, :via => :smtp, :via_options => {
+		Pony.mail(:from => self.email, :to => 'lcstwllr@gmail.com', :subject => 'Newsletter-Anmeldung', :html_body => 'Name: ' + self.name + '<br>Email: ' + self.email, :via => :smtp, :via_options => {
    			:address        => "smtp.sendgrid.net",
   			:port           => "25",
   			:authentication => :plain,

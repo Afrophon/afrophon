@@ -533,7 +533,7 @@ a {
 	z-index: 5;
 }
 	
-#kontakt fieldset {
+fieldset {
 	border: none;	
 	float: left;
 	display: inline;
@@ -550,7 +550,7 @@ a {
     cursor: default;
 }
 
-#kontakt label {
+label {
 	display: block;
 	margin-bottom: 3px;
     -moz-user-select: -moz-none;
@@ -561,7 +561,7 @@ a {
     cursor: default;
 }
 	
-#kontakt fieldset input, textarea {		
+fieldset input, textarea {		
 	border: 1px solid #ddd;
 	padding: 3px;
 	padding-top: 5px;
@@ -706,4 +706,50 @@ a {
 	margin-left: 15px;
 	margin-right: 29px;
 	padding-right: 19px;
+}
+
+/* Newsletter */
+#newsletter {
+	z-index: 10;
+	position: absolute;
+	top:406px;
+	left:118px;
+	background-color: rgba(255,255,255,0.8);
+	background-color: transparent\9;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+	zoom:1;
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	padding-bottom: 5px;
+	padding-top: 19px;
+	padding-right: 50px;
+	padding-left: 50px;
+	height: 283px;
+	width: 590px;
+	line-height: 1.2;
+	text-align: justify;
+}
+#newsletter button {
+	position: absolute;
+	right:90px;
+	bottom:85px;
+	width: 150px;
+	height: 37px;
+	cursor: pointer;
+	border: none;
+	background-color: rgba(50,50,50,0.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC323232,endColorstr=#CC323232);
+	z-index: 5;
+	color: #fff;
+}		
+#newsletter-img {
+	position: absolute;
+	top:406px;
+	left:808px;
+	z-index: 11;
+	background: green;
+	width:275px;
+	height:308px;
 }

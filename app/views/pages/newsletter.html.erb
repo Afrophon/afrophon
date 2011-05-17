@@ -15,7 +15,6 @@ height: 1010px;
 }
 </style>
 <% end %>
-<div class="banner"><img src="images/newsletter/banner.png"/></div> 
 <div id="navigation" class="ap">
 <div class="normal"><a href="/">Neuigkeiten</a></div>
 <div class="normal"><a href="/ueber-uns.html">&Uuml;ber uns</a></div>
@@ -24,4 +23,22 @@ height: 1010px;
 <div class="normal"><a href="/kontakt.html">Kontakt</a></div>
 </div>
 <div id="content">
+<div class="banner"><img src="images/newsletter/banner.png"/></div>
+<% form_tag( { :action => "newsletter" }, :id => "newsletter" ) do %> 
+<p>
+Immer mal wieder verschicken wir einen Newsletter mit Event-Berichten, Hintergrundinfos zu Allerlei und manchmal sogar Gewinnspielen. Um diesen zu abonnieren, gib bitte deinen Namen und deine E-Mail-Adresse unten ein.
+</p>
+<fieldset>
+<p>
+<label for="name">Name</label>
+<input type="text" name="name" id="name" size="30" />
+</p>
+<p>
+<label for="email">E-Mail</label>
+<input type="text" name="email" id="email" size="30" />
+</p>
+</fieldset>
+<button type="submit">Abschicken</button>
+<% end %> 
+<img src="images/newsletter/bg-rlink.png" id="newsletter-img" 7>
 </div>
