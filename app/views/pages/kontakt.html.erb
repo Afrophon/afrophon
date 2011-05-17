@@ -1,7 +1,20 @@
-<% if !defined? nachricht 
+<% 
+if !defined? nachricht 
 nachricht = ""
-end %>
-<% content_for :head do  %>
+end
+if !defined? name 
+name = ""
+end 
+if !defined? telefon
+telefon = ""
+end 
+if !defined? email
+email = ""
+end 
+if !defined? text 
+text = ""
+end 
+content_for :head do  %>
 <style type="text/css">
 #box {
 height: 1000px;
@@ -21,21 +34,21 @@ height: 1000px;
 <fieldset id="basics">
 <p>
 <label for="name">Name</label>
-<input type="text" name="name" id="name" size="30" placeholder="Peter Enterprise" required />
+<input type="text" name="name" id="name" size="30" placeholder="Peter Enterprise" value="<%=raw name %>" required />
 </p>
 <p>
 <label for="email">E-Mail</label>
-<input type="email" name="email" id="email" size="30" placeholder="peter@afrophon.de" required />
+<input type="email" name="email" id="email" size="30" placeholder="peter@afrophon.de" value="<%=raw email %>" required />
 </p>
 <p>
 <label for="telefon">Telefonnummer</label>
-<input type="tel" name="telefon" id="telefon" size="30" placeholder="03521 456 438" />
+<input type="tel" name="telefon" id="telefon" size="30" placeholder="03521 456 438" value="<%=raw telefon %>" />
 </p>
 </fieldset>
 <fieldset id="nachricht">
 <p>
 <label for="nachricht">Nachricht</label>
-<textarea name="nachricht" id="nachricht" required></textarea>
+<textarea name="nachricht" id="nachricht" required><%=raw text %></textarea>
 </p>
 </fieldset>
 <button type="submit" value="Abschicken" >Abschicken</button>

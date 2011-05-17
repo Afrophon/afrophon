@@ -1,17 +1,27 @@
-<% content_for :head do  %>
+<% 
+if !defined? nachricht 
+nachricht = ""
+end
+if !defined? name 
+name = ""
+end 
+if !defined? email
+email = ""
+end 
+content_for :head do  %>
 <style type="text/css">
 #box {
 height: 1010px;
 }
 </style>
 <% end %>
-<div class="banner"><img src="images/ueber-uns/banner.png"/></div> 
+<div class="banner"><img src="images/newsletter/banner.png"/></div> 
 <div id="navigation" class="ap">
 <div class="normal"><a href="/">Neuigkeiten</a></div>
-<div class="current"><a href="/ueber-uns.html">&Uuml;ber uns</a></div>
+<div class="normal"><a href="/ueber-uns.html">&Uuml;ber uns</a></div>
 <div class="normal"><a href="/events.html">Events</a></div>
 <div class="normal"><a href="/unterstuetzer.html">Unterstützer</a></div>
 <div class="normal"><a href="/kontakt.html">Kontakt</a></div>
 </div>
 <div id="content">
-</a>
+</div>
