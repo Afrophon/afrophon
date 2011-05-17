@@ -465,6 +465,7 @@ a {
 	padding-top: 26px;
 	font-size: 18px;
 	color: rgba(0,0,0,0.9);
+	cursor: pointer;
 }
 #control-left {
 	width:30px;
@@ -477,6 +478,7 @@ a {
 	padding-top: 26px;
 	font-size: 18px;
 	color: rgba(0,0,0,0.9);
+	cursor: pointer;
 }
 
 /* Kontakt */
