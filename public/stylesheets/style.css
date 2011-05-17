@@ -737,6 +737,7 @@ fieldset input, textarea {
 #newsletter fieldset {
 	margin-top: -10px;
 	float: left;
+	width: 500px;
 }
 #newsletter button {
 	position: absolute;
