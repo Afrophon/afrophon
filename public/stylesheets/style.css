@@ -3,6 +3,7 @@ html {
 	overflow-x: auto;
 	overflow-y: scroll;	
 	padding: 0;
+	-webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -74,7 +75,7 @@ a {
 	padding: 0px 20px 0px 20px;
 	border-right: rgb(0, 153, 204) 1px dotted;
 	text-transform: uppercase;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Helvetica Neue',Helvetica, Arial, sans-serif;
 	font-weight: bold; 
 }
 #catnav {
@@ -86,6 +87,8 @@ a {
 	position: relative;
 	top:-5px;
 	padding: 0px 10px 0px 10px;
+	font-weight:300;
+	font-stretch: condensed;
 }
 .normal a {
 	text-decoration: none;
