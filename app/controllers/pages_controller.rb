@@ -34,12 +34,12 @@ end
 def newsletter
 	@nachricht = ""
 	if params[:authenticity_token] == form_authenticity_token
-		@kontakt = Kontakt.new
-		@kontakt.email = params[:email]
-		@kontakt.name = params[:name]
-		@kontakt.sendmail
+		@newsletter = Newsletter.new
+		@newsletter.email = params[:email]
+		@newsletter.name = params[:name]
+		@newsletter.sendmail
 		@nachricht = "Vielen Dank für dein Interesse! Wir melden uns demnächst!"
-		@kontakt.errors.full_messages.each do |error|
+		@newsletter.errors.full_messages.each do |error|
     		if (error == "Email can't be blank")
     	    	@nachricht = "Gib bitte eine E-Mail Adresse an!"
     	    	break
