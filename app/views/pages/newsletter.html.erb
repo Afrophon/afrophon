@@ -31,14 +31,15 @@ Immer mal wieder verschicken wir einen Newsletter mit Event-Berichten, Hintergru
 <fieldset>
 <p>
 <label for="name">Name</label>
-<input type="text" name="name" id="name" size="30" />
+<input type="text" name="name" id="name" size="30" value="<%=raw name %>" />
 </p>
 <p>
 <label for="email">E-Mail</label>
-<input type="text" name="email" id="email" size="30" />
+<input type="text" name="email" id="email" size="30" value="<%=raw email %>" />
 </p>
 </fieldset>
 <button type="submit">Abschicken</button>
+<div id="message"><%=raw nachricht %></div>
 <% end %> 
 <img src="images/newsletter/bg-rlink.png" id="newsletter-img" 7>
 </div>

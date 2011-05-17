@@ -38,7 +38,7 @@ def newsletter
 		@kontakt.email = params[:email]
 		@kontakt.name = params[:name]
 		@kontakt.sendmail
-		@nachricht = "Wir haben deine Nachricht bekommen <br /> und werden uns in Kürze bei dir melden. Vielen Dank!"
+		@nachricht = "Vielen Dank für dein Interesse! Wir melden uns demnächst!"
 		@kontakt.errors.full_messages.each do |error|
     		if (error == "Email can't be blank")
     	    	@nachricht = "Gib bitte eine E-Mail Adresse an!"
