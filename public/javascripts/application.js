@@ -1,5 +1,5 @@
 document.ready = function() {
-	var pageheights = {'/' : 910, '/ueber-uns.html' : 1200,  '/events.html' : 1100,  '/unterstuetzer.html' : 910,  '/kontakt.html' : 1000};
+	var pageheights = {'/' : 910, '/ueber-uns.html' : 1010,  '/events.html' : 1100,  '/unterstuetzer.html' : 910,  '/kontakt.html' : 1000};
 	var events = ['/findusmc.html'];
 
 	var state = {};

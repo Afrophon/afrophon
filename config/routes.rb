@@ -11,6 +11,9 @@ Afrophon::Application.routes.draw do
   match "/bands.html" => "pages#bands"
   match "/anteilseigner.html" => "pages#anteilseigner"
   match "/investorrelations.html" => "pages#investorrelations"
+  match "/newsletter.html" => "pages#newsletter"
+  match "/impressum.html" => "pages#impressum"
+  match "/datenschutz.html" => "pages#datenschutz"
   
   match "/findusmc.html" => "event#findusmc"
   match "/indierocknight.html" => "event#indierocknight"
