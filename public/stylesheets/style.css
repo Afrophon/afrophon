@@ -264,6 +264,9 @@ a {
 	z-index: 10;
 	line-height: 21px;
 }
+.top {
+	top:402px !important;
+}
 .rellink {
 	text-decoration: none;
 	background: #333;
@@ -293,6 +296,13 @@ a {
 	margin-top: 2px;
 	line-height:14px;
 	word-spacing: -2px;
+}
+.header3 {
+	font-weight: 700;
+  	text-shadow: 0px 0px 20px rgb(100,100,100);
+	text-transform: uppercase;
+	font-size: 17px;
+	letter-spacing: 1px;
 }
 
 /* News Boxes */
@@ -363,6 +373,9 @@ a {
 	margin-top: 22px;
 	width: 460px;
 }
+.newsbox.double {
+	height: 224px;
+}
 .newsbox.resize:not(.active) img {
 	display: none;
 }
@@ -372,6 +385,10 @@ a {
 .newsbox.resize:not(.active) h2 {
 	position: absolute;
 	top:-6px;
+}
+.newsbox-right{
+	position: absolute;
+	left: 530px;top:21px;
 }
 
 /* Events */
