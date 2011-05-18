@@ -366,6 +366,7 @@ a {
 	font-size: 26px;
 	position: absolute;
 	top:6px;
+	text-transform: uppercase;
 }
 .newsbox.resize {
 	height: 20px;
@@ -808,4 +809,94 @@ fieldset input, textarea {
 	z-index: 11;
 	width:275px;
 	height:308px;
+}
+
+/* Datenschutz */
+#text {
+	position: absolute;
+	top:406px;
+	left:118px;
+	background-color: rgba(255,255,255,0.8);
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	padding-left: 39px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	width: 925px;
+}
+
+#text h3 {
+	margin-left: -20px;
+}
+
+#text h4 {
+	font-size: 12px;
+	margin-left: -20px;
+	padding-top: 10px;
+} 
+
+#text ul li {
+	list-style-position: inside;
+	list-style-type:square;
+	list-style: square;
+	margin-left:20px;
+	font-size:10px;
+}
+
+#text p {
+	padding-top: 5px;
+	font-size: 10px;
+	margin-left: -20px;
+	margin-right: 15px;
+	text-align: justify;
+}
+
+/* Impressum */
+div#impressum, div#junior {
+	position: absolute;
+	top:406px;
+	left:118px;
+	background-color: transparent\9;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+	zoom:1;
+	background-color: rgba(255,255,255,0.8);
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	padding: 20px;
+	width: 925px;
+	float: left;
+}
+
+div#junior {
+	top:700px;
+}
+
+p {
+    line-height: 1.2;
+}
+
+p#adress {
+}
+
+p#vorstand {
+    float: right;
+    margin-top: 10px;
+}
+
+p#contact {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+p#haftungsausschluss {
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+div#junior {
+	font-size: 12px;
 }
