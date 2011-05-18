@@ -485,7 +485,7 @@ a {
 	height: 540px;
 	margin-right: 10px;
 	font-size: 14px;
-	background-color: white;
+	background-color: #dff7ff;
 }
 #control-right {
 	width:30px;
@@ -512,6 +512,24 @@ a {
 	font-size: 18px;
 	color: rgba(0,0,0,0.9);
 	cursor: pointer;
+}
+.pagetext {
+	margin: 40px auto 20px auto;
+	width:650px;
+	white-space: normal;
+	text-align: justify;
+	padding: 30px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background-color: #cceaf4;
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+}
+.pagemedia {
+	margin: auto;
+	text-align: center;
 }
 
 /* Kontakt */

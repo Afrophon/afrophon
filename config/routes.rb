@@ -19,6 +19,10 @@ Afrophon::Application.routes.draw do
   match "/indierocknight.html" => "event#indierocknight"
   match "/libellaswing.html" => "event#libellaswing"
   match "/meissentanzt.html" => "event#meissentanzt"
+  match "/safranindross.html" => "event#safranindross"
+  match "/fragezeichen.html" => "event#fragezeichen"
+  match "/kinderdisco.html" => "event#kinderdisco"
+  match "/poetryslam.html" => "event#poetryslam"
   
   match "/ajax/:path" => "pages#ajax"
   match "/ajax/event/:path" => "event#ajax"
