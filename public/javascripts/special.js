@@ -16,7 +16,7 @@ $(function() {
 				ovf.html(data).css({'z-index':15, display: 'block', left:118, top:402});
 				var animation = $('#animation');
 				animation.offset(element.offset()).width(285).height(285);
-				animation.animate({width: 969, height: 669, left:0, top:0}, 1000, function () {
+				animation.animate({width: 965, height: 669, left:0, top:0}, 1000, function () {
 					$('#events').remove();
 				});
 			});
