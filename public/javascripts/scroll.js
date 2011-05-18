@@ -8,7 +8,7 @@ $(function() {
 	
 	lines.css('left', 0);
 	
-	$(window).bind('selectstart', function () {
+	$('#events').bind('selectstart', function () {
 		return false;
 	});
 	
