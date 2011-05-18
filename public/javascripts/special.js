@@ -1,7 +1,7 @@
 $(function() {	
 	var state = {};
 	
-	var links = $('.event,.evlink');
+	var links = $('.event');
 	links.unbind('click');
 	
 	links.click(function(event) {

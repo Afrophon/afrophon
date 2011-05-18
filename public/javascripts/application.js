@@ -6,9 +6,12 @@ document.ready = function() {
 	bindevents = function () {
 		window.scrollTo(0, 0);
 		$('#box').height(pageheights[document.location.pathname]);
-		$('a').not('.evlink').click(function() {
+		$('a').click(function() {
 			history.pushState(state, "Afrophon", $(this).attr('href'));
-			$.get("ajax"+$(this).attr('href'), function(data){ 
+			var path = "ajax"+$(this).attr('href');
+			if (jQuery.inArray(document.location.pathname, events) != -1)
+				path = "ajax/event"+$(this).attr('href');
+			$.get(path, function(data){ 
 				$('.dyncontent').html(data);
 				bindevents();
 			});
