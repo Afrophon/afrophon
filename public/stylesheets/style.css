@@ -483,7 +483,7 @@ a {
 #animation .back {
 	position: absolute;
 	top:0;
-	right:50px;
+	left:850px;
 	margin-left: 50px;
 	margin-top: 20px;
 	text-transform: uppercase;

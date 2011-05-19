@@ -5,7 +5,7 @@ $(function() {
 	links.unbind('click');
 	
 	links.click(function(event) {
-		if ($.browser.msie)
+		if (!history.replaceState)
 			document.location.href=$(this).attr('href');
 		else {
 			var element = $(this);
