@@ -521,6 +521,7 @@ a {
 	width:30px;
 	height:54px;
 	background-color: rgba(0,0,0,0.6);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9F000000,endColorstr=#9F000000);
 	position: absolute;
 	top:325px;
 	left:884px;
@@ -534,6 +535,7 @@ a {
 	width:30px;
 	height:54px;
 	background-color: rgba(0,0,0,0.6);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9F000000,endColorstr=#9F000000);
 	position: absolute;
 	top:325px;
 	left:50px;
@@ -913,4 +915,40 @@ p#haftungsausschluss {
 
 div#junior {
 	font-size: 12px;
+}
+/* Enstehung eines Events */
+
+
+.tooltip {
+	width: 320px;
+	padding: 10px;
+	overflow: hidden;
+  	cursor: pointer;
+  	text-align: justify;
+	background-color: rgba(255,255,255,0.8);
+	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+}
+.tooltip h4 {
+	position: absolute;
+	left:100px;
+	white-space: normal;
+	font-weight: 700;
+	line-height: 12px;
+	font-family: Helvetica, Arial, sans-serif;
+  	display: inline;
+  	margin: 0;
+  	color:#000;
+}
+.tooltip .ttext {
+	margin-top: 15px;
+	line-height: 13px;
+	font-size: 12px;
+}
+.tooltip img {
+	float: left;
+	margin: 0 10px 0 0;
+	width: 72px;
 }

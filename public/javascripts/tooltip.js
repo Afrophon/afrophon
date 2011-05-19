@@ -1,0 +1,5 @@
+$(function() {	
+	$('.tooltip').mouseover(function() {
+		
+	});
+});
