@@ -23,4 +23,8 @@ $(function() {
 			pres.stop().animate({'left': 0}, 1000);
 		}
 	});
+	goto = function (x) {	
+		slidenr = x;
+		pres.stop().animate({'left': -874 * slidenr}, 1000);
+	};
 });
