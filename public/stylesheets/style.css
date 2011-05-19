@@ -88,7 +88,6 @@ a {
 	top:-5px;
 	padding: 0px 10px 0px 10px;
 	font-weight:300;
-	font-stretch: condensed;
 }
 .normal a {
 	text-decoration: none;
@@ -918,9 +917,16 @@ div#junior {
 }
 /* Enstehung eines Events */
 
-
+.mask {
+	position: absolute;
+	width: 90px;
+	height: 88px;
+	overflow: hidden;
+}
 .tooltip {
+	position: relative;
 	width: 320px;
+	margin: 0;
 	padding: 10px;
 	overflow: hidden;
   	cursor: pointer;
@@ -930,10 +936,12 @@ div#junior {
 	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+}
+.tooltip.fest {
+	cursor:default;
 }
 .tooltip h4 {
-	position: absolute;
-	left:100px;
 	white-space: normal;
 	font-weight: 700;
 	line-height: 12px;
@@ -943,12 +951,16 @@ div#junior {
   	color:#000;
 }
 .tooltip .ttext {
-	margin-top: 15px;
 	line-height: 13px;
 	font-size: 12px;
 }
 .tooltip img {
 	float: left;
-	margin: 0 10px 0 0;
+	margin: 0 12px 0 0;
 	width: 72px;
+}
+.line {
+	position: absolute;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 16;
 }
