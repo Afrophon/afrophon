@@ -261,7 +261,7 @@ a {
 	left: 118px;top:628px;
 	width:550px;
 	z-index: 10;
-	line-height: 21px;
+	line-height: 1.36;
 }
 .top {
 	top:402px !important;
