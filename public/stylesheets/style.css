@@ -959,7 +959,7 @@ div#junior {
 	margin: 0 12px 0 0;
 	width: 72px;
 }
-.line {
+.verb {
 	position: absolute;
 	background-color: rgba(0,0,0,0.8);
 	z-index: 16;
