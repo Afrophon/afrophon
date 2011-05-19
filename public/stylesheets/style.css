@@ -931,15 +931,20 @@ div#junior {
 	overflow: hidden;
   	cursor: pointer;
   	text-align: justify;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgb(255,255,255);
 	-webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 	-moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 	-o-box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
 	box-shadow: 5px 5px 5px rgba(100,100,100,0.3);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
 }
 .tooltip.fest {
 	cursor:default;
+}
+.close {
+	position: absolute;
+	top:5px;
+	left:100%;
+	margin-left: -30px;
 }
 .tooltip h4 {
 	white-space: normal;
@@ -962,5 +967,5 @@ div#junior {
 .verb {
 	position: absolute;
 	background-color: rgba(0,0,0,0.8);
-	z-index: 16;
+	z-index: 14;
 }
