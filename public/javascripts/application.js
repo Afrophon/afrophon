@@ -9,6 +9,7 @@ document.ready = function() {
 			$('#box').height(pageheights[document.location.pathname]);
 			$('a').click(function() {
 				history.pushState(state, "Afrophon", $(this).attr('href'));
+				_gaq.push(['_trackPageview', $(this).attr('href')]);
 				var path = "ajax"+$(this).attr('href');
 				if (jQuery.inArray(document.location.pathname, events) != -1)
 					path = "ajax/event"+$(this).attr('href');
@@ -24,6 +25,7 @@ document.ready = function() {
 			var path = "ajax"+document.location.pathname;
 			if (jQuery.inArray(document.location.pathname, events) != -1)
 				path = "ajax/event"+document.location.pathname;
+			_gaq.push(['_trackPageview', document.location.pathname]);
 			$.get(path, function(data){ 
 				$('.dyncontent').html(data);
 				bindevents();
