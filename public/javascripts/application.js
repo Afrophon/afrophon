@@ -5,19 +5,20 @@ document.ready = function() {
 
 		var state = {};
 		bindevents = function () {
-			window.scrollTo(0, 0);
 			$('#box').height(pageheights[document.location.pathname]);
 			$('a').click(function() {
 				history.pushState(state, "Afrophon", $(this).attr('href'));
-				document.title = "Afrophon";
 				_gaq.push(['_trackPageview', $(this).attr('href')]);
+				document.title = "Loading...";
 				var path = "ajax"+$(this).attr('href');
 				if (jQuery.inArray(document.location.pathname, events) != -1)
 					path = "ajax/event"+$(this).attr('href');
 				$.get(path, function(data){ 
-				$('.dyncontent').html(data);
-				bindevents();
-			});
+					document.title = "Afrophon";
+					window.scrollTo(0, 0);
+					$('.dyncontent').html(data);
+					bindevents();
+				});
 		    return false;
 			});
 		};
@@ -29,6 +30,7 @@ document.ready = function() {
 			_gaq.push(['_trackPageview', document.location.pathname]);
 			$.get(path, function(data){ 
 				$('.dyncontent').html(data);
+				window.scrollTo(0, 0);	
 				bindevents();
 			});
 		});
