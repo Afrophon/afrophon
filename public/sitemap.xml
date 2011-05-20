@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      xmlns="http://sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://sitemaps.org/schemas/sitemap/0.9
+            http://sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://www.afrophon.de/</loc>
+  <loc>http://afrophon.de/</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/ueber-uns.html</loc>
+  <loc>http://afrophon.de/ueber-uns.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/events.html</loc>
+  <loc>http://afrophon.de/events.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/unterstuetzer.html</loc>
+  <loc>http://afrophon.de/unterstuetzer.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/kontakt.html</loc>
+  <loc>http://afrophon.de/kontakt.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/impressum.html</loc>
+  <loc>http://afrophon.de/impressum.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/datenschutz.html</loc>
+  <loc>http://afrophon.de/datenschutz.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/newsletter.html</loc>
+  <loc>http://afrophon.de/newsletter.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/investorrelations.html</loc>
+  <loc>http://afrophon.de/investorrelations.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/findusmc.html</loc>
+  <loc>http://afrophon.de/findusmc.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/libellaswing.html</loc>
+  <loc>http://afrophon.de/libellaswing.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/meissentanzt.html</loc>
+  <loc>http://afrophon.de/meissentanzt.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/indierocknight.html</loc>
+  <loc>http://afrophon.de/indierocknight.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/sponsoren.html</loc>
+  <loc>http://afrophon.de/sponsoren.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/bands.html</loc>
+  <loc>http://afrophon.de/bands.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.afrophon.de/anteilseigner.html</loc>
+  <loc>http://afrophon.de/anteilseigner.html</loc>
   <lastmod>2011-11-25T08:30:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
