@@ -7,6 +7,7 @@ gem 'pony'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'sitemap_generator'
 
 # Use unicorn as the web server
 # gem 'unicorn'
