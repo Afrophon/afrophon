@@ -943,6 +943,7 @@ div#junior {
 }
 .tooltip.fest {
 	cursor:default;
+	position: absolute !important;
 }
 .close {
 	position: absolute;

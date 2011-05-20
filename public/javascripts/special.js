@@ -5,6 +5,7 @@ $(function() {
 	links.unbind('click');
 	
 	links.click(function(event) {
+		links.unbind('click');
 		if (!history.replaceState)
 			document.location.href=$(this).attr('href');
 		else {
