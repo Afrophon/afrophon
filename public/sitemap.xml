@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://sitemaps.org/schemas/sitemap/0.9"
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://sitemaps.org/schemas/sitemap/0.9
-            http://sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
   <loc>http://afrophon.de/</loc>
