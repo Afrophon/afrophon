@@ -13,9 +13,7 @@ document.ready = function() {
 				var path = "ajax"+$(this).attr('href');
 				if (jQuery.inArray(document.location.pathname, events) != -1)
 					path = "ajax/event"+$(this).attr('href');
-				var title = $(this).html();
 				$.get(path, function(data){ 
-					document.title = title + " » Afrophon";
 					window.scrollTo(0, 0);
 					$('.dyncontent').html(data);
 					bindevents();
@@ -32,9 +30,6 @@ document.ready = function() {
 			_gaq.push(['_trackPageview', document.location.pathname]);
 			$.get(path, function(data){ 
 				$('.dyncontent').html(data);
-				var title = "";
-				title += $('.current').children().last().html();
-				document.title =  + " » Afrophon";
 				window.scrollTo(0, 0);	
 				bindevents();
 			});
