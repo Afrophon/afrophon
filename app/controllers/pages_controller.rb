@@ -2,13 +2,13 @@
 class PagesController < ApplicationController
 def ajax
   begin
-	render params[:path], :layout => nil
+	render params[:path], :layout => "ajax", :content_type => Mime::XML
   rescue ActionView::MissingTemplate
 	render :file => "#{Rails.root}/public/404.html", :status => 404, :layout => false
   end
 end
 def ajaxindex
-	render 'index.html.erb', :layout => nil
+	render 'index.html.erb', :layout => "ajax", :content_type => Mime::XML
 end
 def kontakt
 	@nachricht = ""

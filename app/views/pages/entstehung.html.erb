@@ -1,11 +1,13 @@
 <% content_for :head do  %>
-<title>Entstehung » Afrophon</title>
 <style type="text/css">
 #box {
 height: 2210px;
 }
 </style>
 <% end %>
+<% content_for :title do  %>Entstehung » Afrophon<% end %>
+<% content_for :navigation do  %>
+<div class="banner"><img src="images/ueber-uns/banner.png" alt=""/></div> 
 <div id="navigation" class="doublenav">
 <div class="normal left"><a href="/">Neuigkeiten</a></div>
 <div class="current"><a href="/ueber-uns.html">&Uuml;ber uns</a></div>
@@ -17,7 +19,7 @@ height: 2210px;
 <div class="normal"><a href="/zeitungsartikel.html">Zeitungsartikel</a></div>
 </div>
 </div>
-<div class="banner"><img src="images/ueber-uns/banner.png" alt=""/></div> 
+<% end %>
 <div id="content">
 <div class="digest" style="height:380px">
 

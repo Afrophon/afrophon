@@ -1,11 +1,12 @@
 <% content_for :head do  %>
-<title>Events » Afrophon</title>
 <style type="text/css">
 #box {
 height: 1100px;
 }
 </style>
 <% end %>
+<% content_for :title do  %>Events » Afrophon<% end %>
+<% content_for :navigation do  %>
 <div class="banner"><img src="images/events/banner.png" alt="" /></div> 
 <div id="navigation" class="doublenav">
 <div class="normal left"><a href="/">Neuigkeiten</a></div>
@@ -20,6 +21,7 @@ height: 1100px;
 <div class="normal"><a href="/indierocknight.html" class="evlink">Indie Rock Night</a></div>
 </div>
 </div>
+<% end %>
 <div id="events">
 <div class="line">
 <div class="event" href="/poetryslam.html"><img src="images/events/poetryslam.png" alt="" /></div>

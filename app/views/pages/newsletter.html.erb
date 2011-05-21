@@ -9,22 +9,24 @@ if !defined? email
 email = ""
 end 
 content_for :head do  %>
-<title>Newsletter » Afrophon</title>
 <style type="text/css">
 #box {
 height: 1010px;
 }
 </style>
 <% end %>
+<% content_for :title do  %>Newsletter » Afrophon<% end %>
+<% content_for :navigation do  %>
 <div id="navigation" class="ap">
+<div class="banner"><img src="images/newsletter/banner.png" alt="" /></div>
 <div class="normal left"><a href="/">Neuigkeiten</a></div>
 <div class="normal"><a href="/ueber-uns.html">&Uuml;ber uns</a></div>
 <div class="normal"><a href="/events.html">Events</a></div>
 <div class="normal"><a href="/unterstuetzer.html">Unterstützer</a></div>
 <div class="normal"><a href="/kontakt.html">Kontakt</a></div>
 </div>
+<% end %>
 <div id="content">
-<div class="banner"><img src="images/newsletter/banner.png" alt="" /></div>
 <% form_tag( { :action => "newsletter" }, :id => "newsletter" ) do %> 
 <p>
 Immer mal wieder verschicken wir einen Newsletter mit Event-Berichten, Hintergrundinfos zu Allerlei und manchmal sogar Gewinnspielen. Um diesen zu abonnieren, gib bitte deinen Namen und deine E-Mail-Adresse unten ein.
