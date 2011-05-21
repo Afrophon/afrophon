@@ -33,7 +33,7 @@ document.ready = function() {
 				
 				document.title = title;
 				
-				$('#navigation,.banner').remove();
+				$('#navigation,.banner,#ss_banner').remove();
 				$('#box').prepend(navigation);
 				
 				$('.dyncontent').html(text);
