@@ -1,15 +1,16 @@
-<div class="banner"><img src="images/events/banner.png"/></div> 
-<div id="navigation" class="doublenav">
-<div class="normal left"><a href="/">Neuigkeiten</a></div>
-<div class="normal"><a href="/ueber-uns.html">&Uuml;ber uns</a></div>
-<div class="current"><a href="/events.html">Events</a></div>
-<div class="normal"><a href="/unterstuetzer.html">Unterstützer</a></div>
-<div class="normal"><a href="/kontakt.html">Kontakt</a></div>
-<div id="catnav">
-<div class="normal first"><a href="/findusmc.html" class="evlink">Findus MC</a></div>
-<div class="normal"><a href="/libellaswing.html" class="evlink">Libella Swing</a></div>
-<div class="normal"><a href="/meissentanzt.html" class="evlink">Meissen Tanzt</a></div>
-<div class="normal"><a href="/indierocknight.html" class="evlink">Indie Rock Night</a></div>
-</div>
-</div>
-<%= yield %>
+<?xml version="1.0" encoding="UTF-8"?>
+<event>
+	<title>
+		<%= yield:title %>
+	</title>
+	<header>
+		<![CDATA[
+			<%= yield:navigation %>
+		]]>
+	</header>
+	<dyncontent>
+		<![CDATA[
+			<%= yield %>
+		]]>
+	</dyncontent>
+</event>
