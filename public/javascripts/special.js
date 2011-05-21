@@ -12,7 +12,7 @@ $(function() {
 			var element = $(this);
 			$('.dyncontent').append('<div id="ovf"></div>');
 			var ovf = $('#ovf');
-			$.get("ajax/event"+element.attr('href'), function(xml){ 
+			$.get("ajax"+element.attr('href'), function(xml){ 
 				var text = $(xml).find('dyncontent').text();
 				var navigation = $(xml).find('navigation').text();
 				var title = $(xml).find('title').text();
@@ -24,7 +24,7 @@ $(function() {
 				var animation = $('#animation');
 				
 				$('#navigation,.banner').remove();
-				$('.dyncontent').prepend(navigation);
+				$('#box').prepend(navigation);
 				
 				document.title = title;
 				

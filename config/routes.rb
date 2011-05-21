@@ -17,18 +17,16 @@ Afrophon::Application.routes.draw do
   match "/zeitungsartikel.html" => "pages#zeitungsartikel"
   match "/entstehung.html" => "pages#entstehung"
   
-  match "/findusmc.html" => "event#findusmc"
-  match "/indierocknight.html" => "event#indierocknight"
-  match "/libellaswing.html" => "event#libellaswing"
-  match "/meissentanzt.html" => "event#meissentanzt"
-  match "/safranindross.html" => "event#safranindross"
-  match "/fragezeichen.html" => "event#fragezeichen"
-  match "/kinderdisco.html" => "event#kinderdisco"
-  match "/poetryslam.html" => "event#poetryslam"
+  match "/findusmc.html" => "pages#findusmc"
+  match "/indierocknight.html" => "pages#indierocknight"
+  match "/libellaswing.html" => "pages#libellaswing"
+  match "/meissentanzt.html" => "pages#meissentanzt"
+  match "/safranindross.html" => "pages#safranindross"
+  match "/fragezeichen.html" => "pages#fragezeichen"
+  match "/kinderdisco.html" => "pages#kinderdisco"
+  match "/poetryslam.html" => "pages#poetryslam"
   
   match "/ajax/:path" => "pages#ajax"
-  match "/ajax/event/:path" => "event#ajax"
-  match "/ajax/event/nil/:path" => "event#ajaxnil"
   match "/ajax" => "pages#ajaxindex"
   
   # The priority is based upon order of creation:
