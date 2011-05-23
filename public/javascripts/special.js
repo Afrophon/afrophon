@@ -10,10 +10,12 @@ $(function() {
 			document.location.href=$(this).attr('href');
 		else {
 			var element = $(this);
-			$('.dyncontent').append('<div id="ovf"></div>');
-			var ovf = $('#ovf');
 			document.title = "Loading...";
 			$.get("ajax"+element.attr('href'), function(xml){ 
+				
+				$('.dyncontent').append('<div id="ovf"></div>');
+				var ovf = $('#ovf');
+			
 				var text = $(xml).find('dyncontent').text();
 				var navigation = $(xml).find('navigation').text();
 				var title = $(xml).find('title').text();
