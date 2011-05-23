@@ -57,12 +57,14 @@ a {
 	z-index: 12;
 	opacity: 0.8;
 	filter:alpha(opacity=80);
+	height: 25px;
 }
 .ap {
 	top:375px;
 }
 .doublenav{
 	top:360px;
+	height: 40px !important;
 }
 #navigation div.left {
 	border-left: rgb(0, 153, 204) 1px dotted;
@@ -76,7 +78,7 @@ a {
 	padding: 0px 20px 0px 20px;
 	border-right: rgb(0, 153, 204) 1px dotted;
 	text-transform: uppercase;
-	font-family: 'Helvetica Neue',Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-weight: bold; 
 }
 #catnav {

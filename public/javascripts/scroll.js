@@ -34,7 +34,7 @@ $(function() {
 		}
 	};
 	
-	handle.bind('mousedown', function() {
+	handle.bind('mousedown', function(e) {
 		$(window).bind('mousemove', scrolldabar);
 	});
 	

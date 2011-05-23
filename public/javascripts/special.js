@@ -12,6 +12,7 @@ $(function() {
 			var element = $(this);
 			$('.dyncontent').append('<div id="ovf"></div>');
 			var ovf = $('#ovf');
+			document.title = "Loading...";
 			$.get("ajax"+element.attr('href'), function(xml){ 
 				var text = $(xml).find('dyncontent').text();
 				var navigation = $(xml).find('navigation').text();
