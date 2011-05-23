@@ -535,6 +535,7 @@ a {
 	font-size: 18px;
 	color: rgba(0,0,0,0.9);
 	cursor: pointer;
+	z-index: 15;
 }
 #control-left {
 	width:30px;
@@ -549,6 +550,7 @@ a {
 	font-size: 18px;
 	color: rgba(0,0,0,0.9);
 	cursor: pointer;
+	z-index: 15;
 }
 .pagetext {
 	margin: 40px auto 20px auto;
@@ -963,12 +965,13 @@ div#junior {
   	color:#000;
 }
 .tooltip .ttext {
+	white-space: normal;
 	line-height: 13px;
 	font-size: 12px;
 }
 .tooltip img {
 	float: left;
-	margin: 0 12px 0 0;
+	margin: 0 14px 4px 0;
 	width: 72px;
 }
 .verb {
@@ -985,4 +988,16 @@ div#junior {
 	text-transform: uppercase;
 	font-size: 26px;
 	letter-spacing: 1px;
+}
+.entstehung {
+	top:395px !important;left:118px !important;
+	z-index: 12;
+	width: 965px !important;
+	height: 520px !important;
+	z-index: 12;
+}
+
+.big {
+	width: 965px !important;
+	height: 520px !important;
 }

@@ -1,5 +1,6 @@
 $(function() {	
 	var pres = $('#pages');
+	var slidewdth = -1 * $('.page').width() - 10;
 	var slidenr = 0;
 	var slidecount = pres.children().size() - 1;
 	
@@ -8,16 +9,16 @@ $(function() {
 	$('#control-left').click(function () {
 		slidenr--;
 		if (slidenr >= 0)
-			pres.stop().animate({'left': -874 * slidenr}, 1000);
+			pres.stop().animate({'left': slidewdth * slidenr}, 1000);
 		else {
 			slidenr = slidecount;
-			pres.stop().animate({'left': -874 * slidenr}, 1000);
+			pres.stop().animate({'left': slidewdth * slidenr}, 1000);
 		}
 	});
 	$('#control-right').click(function () {
 		slidenr++;
 		if (slidenr <= slidecount)
-			pres.stop().animate({'left': -874 * slidenr}, 1000);
+			pres.stop().animate({'left': slidewdth * slidenr}, 1000);
 		else {
 			slidenr = 0;
 			pres.stop().animate({'left': 0}, 1000);
@@ -25,6 +26,6 @@ $(function() {
 	});
 	goto = function (x) {	
 		slidenr = x;
-		pres.stop().animate({'left': -874 * slidenr}, 1000);
+		pres.stop().animate({'left': slidewdth * slidenr}, 1000);
 	};
 });
