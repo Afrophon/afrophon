@@ -13,7 +13,7 @@ body {
 	padding: 0;
 	margin: 0;
 	border: none;
-	overflow:hidden;
+	overflow-y:hidden;
 }
 a {
 	color: #000;
@@ -112,6 +112,7 @@ a {
 #footer {
 	margin-top: 20px;
 	width:100%;
+	min-width: 1200px;
 	height: 200px;
 	border-top:1px solid #ddd;
 }
