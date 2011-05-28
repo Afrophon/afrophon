@@ -11,31 +11,31 @@ $(function() {
 		else {
 			var element = $(this);
 			document.title = "Loading...";
-			$.get("ajax"+element.attr('href'), function(xml){ 
-				
-				$('.dyncontent').append('<div id="ovf"></div>');
-				var ovf = $('#ovf');
+			$.ajax({url: "ajax"+element.attr('href'), 
+				success: function(xml){ 
+					$('.dyncontent').append('<div id="ovf"></div>');
+					var ovf = $('#ovf');
 			
-				var text = $(xml).find('dyncontent').text();
-				var navigation = $(xml).find('navigation').text();
-				var title = $(xml).find('title').text();
+					var text = $(xml).find('dyncontent').text();
+					var navigation = $(xml).find('navigation').text();
+					var title = $(xml).find('title').text();
 				
-				history.pushState(state, "Afrophon", element.attr('href'));
+					history.pushState(state, "Afrophon", element.attr('href'));
 				
-				ovf.html(text).css({'z-index':15, display: 'block', left:118, top:402});
+					ovf.html(text).css({'z-index':15, display: 'block', left:118, top:402});
 				
-				var animation = $('#animation');
+					var animation = $('#animation');
 				
-				$('#navigation,.banner').remove();
-				$('#box').prepend(navigation);
+					$('#navigation,.banner').remove();
+					$('#box').prepend(navigation);
 				
-				document.title = title;
+					document.title = title;
 				
-				animation.offset(element.offset()).width(285).height(285);
-				animation.animate({width: 965, height: 669, left:0, top:0}, 1000, function () {
-					$('#events').remove();
-				});
-			}, 'xml');
+					animation.offset(element.offset()).width(285).height(285);
+					animation.animate({width: 965, height: 669, left:0, top:0}, 1000, function () {
+						$('#events').remove();
+					});
+			}, dataType: 'xml', cache: false});
 		}
 	});
 });

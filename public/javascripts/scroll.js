@@ -6,7 +6,6 @@ $(function() {
 	var barwidth = 964;
 	var clkoffset = 0;
 	var partial =  -1 * (lines.width() + 15 - barwidth) / (barwidth - wdth);
-		console.log(partial);
 	
 	lines.css('left', 0);
 	
@@ -24,7 +23,6 @@ $(function() {
 	};
 	
 	scrolltopos = function (offset) {
-		console.log(lines.css('left') + "+" + offset);
 		if (offset >= barwidth-wdth+clkoffset) {
 			handle.css('left', barwidth-wdth);
 			lines.css('left', (barwidth-wdth) * partial);

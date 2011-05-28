@@ -20,26 +20,26 @@ document.ready = function() {
 		bindevents();
 		$(window).bind('popstate', function(event) {
 			_gaq.push(['_trackPageview', document.location.pathname]);
-			
 			ajaxget(document.location.pathname);
 		});
 		ajaxget = function (url) {
-			$.get("ajax"+url, function(xml){ 
-				var text = $(xml).find('dyncontent').text();
-				var navigation = $(xml).find('navigation').text();
-				var title = $(xml).find('title').text();
+			$.ajax({url: "ajax"+url, 
+				success: function(xml){ 
+					var text = $(xml).find('dyncontent').text();
+					var navigation = $(xml).find('navigation').text();
+					var title = $(xml).find('title').text();
+					
+					window.scrollTo(0, 0);
+					
+					document.title = title;
 				
-				window.scrollTo(0, 0);
+					$('#navigation,.banner,#ss_banner').remove();
+					$('#box').prepend(navigation);
 				
-				document.title = title;
+					$('.dyncontent').html(text);
 				
-				$('#navigation,.banner,#ss_banner').remove();
-				$('#box').prepend(navigation);
-				
-				$('.dyncontent').html(text);
-				
-				bindevents();
-			}, 'xml');
+					bindevents();
+			}, dataType: 'xml', cache: false});
 		};
 	}
 };

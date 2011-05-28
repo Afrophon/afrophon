@@ -20,19 +20,11 @@ a {
 }
 
 /* Hintergrund */
-
-.bg {
-	margin: auto;
-	position: absolute;
-	z-index: 2;
-	height: 100%;
-	width: 100%;
-}
 .logo-img {
 	position: absolute;
 	left:171px;
 	top:0;
-	z-index: 10;
+	z-index: 2;
 	background: url(../images/bgsmall.jpg);
 	width: 527px;
 	height: 160px;
