@@ -1,10 +1,12 @@
 $(function() {
 	var handle = $('#handle');
 	var left = handle.offset().left;
-	var wdth = handle.width()/2;
+	var wdth = handle.width();
 	var lines = $('.line');
 	var barwidth = 964;
-	var partial =  -1 * (lines.width() - barwidth) / (barwidth - wdth * 2);
+	var clkoffset = 0;
+	var partial =  -1 * (lines.width() + 15 - barwidth) / (barwidth - wdth);
+		console.log(partial);
 	
 	lines.css('left', 0);
 	
@@ -22,23 +24,28 @@ $(function() {
 	};
 	
 	scrolltopos = function (offset) {
-		if (offset >= barwidth-wdth) {
+		console.log(lines.css('left') + "+" + offset);
+		if (offset >= barwidth-wdth+clkoffset) {
 			handle.css('left', barwidth-wdth);
 			lines.css('left', (barwidth-wdth) * partial);
-		} else if (offset <= wdth) {
-			handle.css('left', wdth);
+		} else if (offset <= clkoffset) {
+			handle.css('left', 0);
 			lines.css('left', 0);
 		} else {
-			handle.css('left', offset);
-			lines.css('left', offset * partial);
+			handle.css('left', offset - clkoffset);
+			lines.css('left', (offset-clkoffset) * partial);
 		}
 	};
 	
 	handle.bind('mousedown', function(e) {
+		clkoffset = e.pageX - handle.offset().left;
 		$(window).bind('mousemove', scrolldabar);
 	});
 	
-	$('#scrollbar').bind('click', scrolldabar);
+	$('#scrollbar').bind('click', function (e) {
+		clkoffset = wdth/2;
+		scrolldabar(e);
+	});
 	
 	$(window).bind('mouseup', function() {
 		$(window).unbind('mousemove');

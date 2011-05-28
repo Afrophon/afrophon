@@ -444,12 +444,11 @@ a {
 	height: 30px;
 	background-color: rgb(77,188,233);
 	margin-top: 20px;
-	margin-left: -120px;
 	z-index: 5;
 	cursor: pointer;
 	position: absolute;
 	top:627px;
-	left:120px;
+	left:0px;
 }
 #ovf {
 	position: absolute;
