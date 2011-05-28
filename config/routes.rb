@@ -14,7 +14,7 @@ Afrophon::Application.routes.draw do
   match "/newsletter.html" => "pages#newsletter"
   match "/impressum.html" => "pages#impressum"
   match "/datenschutz.html" => "pages#datenschutz"
-  match "/zeitungsartikel.html" => "pages#zeitungsartikel"
+  match "/presse.html" => "pages#presse"
   match "/entstehung.html" => "pages#entstehung"
   
   match "/findusmc.html" => "pages#findusmc"

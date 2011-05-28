@@ -16,7 +16,7 @@ SitemapGenerator::Sitemap.add_links do |sitemap|
   sitemap.add "/newsletter.html", :priority => 1.0
   sitemap.add "/impressum.html", :priority => 1.0
   sitemap.add "/datenschutz.html", :priority => 1.0
-  sitemap.add "/zeitungsartikel.html", :priority => 1.0
+  sitemap.add "/presse.html", :priority => 1.0
   sitemap.add "/entstehung.html", :priority => 1.0
   
   sitemap.add "/findusmc.html", :priority => 1.0
