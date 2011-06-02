@@ -22,7 +22,8 @@ $(function() {
 				
 					history.pushState(state, "Afrophon", element.attr('href'));
 				
-					ovf.html(text).css({'z-index':15, display: 'block', left:118, top:402});
+					ovf.html(text).css({'z-index':15, display: 'block', left:0, top:402});
+					bindevents();
 				
 					var animation = $('#animation');
 				
