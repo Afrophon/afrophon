@@ -57,7 +57,7 @@ a{color:#000}
 
 .newsboxes{position:absolute; left:530px; top:10px}
 
-.newsbox{margin-top:12px; height:90px; background:rgba(255,255,255,0.8); background-color:rgba(255,255,255,0.8); background-color:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CFFFF,endColorstr=#CFFFF); zoom:1; color:#000; position:relative; margin-bottom:20px; -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); width:390px; margin-left:10px; z-index:10; cursor:default; overflow:hidden; font-size:14px; line-height:16px; padding:10px 15px 15px 25px; text-align:justify}
+.newsbox{margin-top:12px; height:90px; background:rgba(255,255,255,0.8); background-color:rgba(255,255,255,0.8); background-color:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF); zoom:1; color:#000; position:relative; margin-bottom:20px; -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); width:390px; margin-left:10px; z-index:10; cursor:default; overflow:hidden; font-size:14px; line-height:16px; padding:10px 15px 15px 25px; text-align:justify}
 .newsbox img{float:left; margin-top:16px; margin-right:10px; position:relative; top:6px}
 .newsbox p{position:relative; top:6px}
 .newsbox h2{font-weight:700; display:inline; font-size:26px; position:absolute; top:6px; text-transform:uppercase}
@@ -89,7 +89,7 @@ a{color:#000}
 .pagemedia{margin:auto; text-align:center}
 .pagelarge{margin:200px auto 20px auto; width:650px; font-family:Verdana,Geneva,sans-serif; font-size:22px; font-weight:700; color:#FFF; text-align:justify;  text-shadow:0px 0px 20px rgb(100,100,100);  word-spacing:-5px}
 
-#kontakt{position:absolute; top:406px; left:0; padding-top:30px; background-color:rgba(255,255,255,0.8); background:rgba(255,255,255,0.8); background-color:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CFFFF,endColorstr=#CFFFF); zoom:1; width:684px; height:304px; max-height:304px; -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); z-index:5}
+#kontakt{position:absolute; top:406px; left:0; padding-top:30px; background-color:rgba(255,255,255,0.8); background:rgba(255,255,255,0.8); background-color:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF); zoom:1; width:684px; height:304px; max-height:304px; -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); z-index:5}
 
 fieldset{border:none; float:left; display:inline; width:245px}
 
@@ -110,12 +110,12 @@ fieldset input, textarea{border:1px solid #ddd; padding:3px; padding-top:5px;   
 #kontakt button{position:absolute; right:60px; bottom:30px; width:150px; height:37px; cursor:pointer; border:none; background-color:rgba(50,50,50,0.8); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC323232,endColorstr=#CC323232); z-index:5; color:#fff}
 .bg-form{position:absolute; left:684px; top:406px}
 #message{position:absolute; right:230px; bottom:30px; line-height:20px}
-#kontakt-informationen{position:absolute; top:746px; left:0; margin-top:20px; float:left; background-color:rgba(255,255,255,0.8); -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); background-color:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CFFFF,endColorstr=#CFFFF); zoom:1; width:364px; height:114px; line-height:1.2; z-index:10}
+#kontakt-informationen{position:absolute; top:746px; left:0; margin-top:20px; float:left; background-color:rgba(255,255,255,0.8); -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); background-color:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF); zoom:1; width:364px; height:114px; line-height:1.2; z-index:10}
 
 #kontakt-informationen p#adresse{margin-left:42px; margin-top:30px; float:left}
 
 #kontakt-informationen p#contact{margin-top:48px; margin-left:20px; float:left}
-#social{position:absolute; top:746px; left:376px; float:right; background-color:rgba(255,255,255,0.8); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CFFFF,endColorstr=#CFFFF); -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); width:244px; height:114px; margin-top:20px; margin-left:15px; margin-right:29px; padding-right:19px; z-index:12}
+#social{position:absolute; top:746px; left:376px; float:right; background-color:rgba(255,255,255,0.8); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF); -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); width:244px; height:114px; margin-top:20px; margin-left:15px; margin-right:29px; padding-right:19px; z-index:12}
 
 #social a{width:64px; height:64px; float:right; margin-top:22px; padding-right:8px}
 
@@ -127,7 +127,7 @@ fieldset input, textarea{border:1px solid #ddd; padding:3px; padding-top:5px;   
 #rightside{position:absolute; top:746px; left:666px; -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); width:264px; height:79px; margin-top:20px; margin-left:15px; margin-right:29px; padding:35px 0px 0px 20px; background:#333; color:white; z-index:12; cursor:pointer; text-decoration:none; font-size:16px}
 #rightside div{font-size:12px}
 
-#newsletter{z-index:10; position:absolute; top:406px; left:0; background-color:rgba(255,255,255,0.8); background-color:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CFFFF,endColorstr=#CFFFF); zoom:1; -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); padding-bottom:30px; padding-top:19px; padding-right:50px; padding-left:50px; height:258px; width:590px; line-height:1.2; text-align:justify}
+#newsletter{z-index:10; position:absolute; top:406px; left:0; background-color:rgba(255,255,255,0.8); background-color:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF); zoom:1; -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); padding-bottom:30px; padding-top:19px; padding-right:50px; padding-left:50px; height:258px; width:590px; line-height:1.2; text-align:justify}
 #newsletter #message{left:50px !important}
 #newsletter fieldset{margin-top:-10px; float:left; width:500px}
 #newsletter button{position:absolute; right:90px; bottom:95px; width:150px; height:37px; cursor:pointer; border:none; background-color:rgba(50,50,50,0.8); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC323232,endColorstr=#CC323232); z-index:5; color:#fff}
@@ -143,7 +143,7 @@ fieldset input, textarea{border:1px solid #ddd; padding:3px; padding-top:5px;   
 
 #text p{font-size:10px; margin-left:-20px; margin-right:15px; text-align:justify}
 
-div#impressum, div#junior{position:absolute; top:406px; left:0; background-color:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CFFFF,endColorstr=#CFFFF); zoom:1; background-color:rgba(255,255,255,0.8); -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); padding:20px; width:925px; float:left}
+div#impressum, div#junior{position:absolute; top:406px; left:0; background-color:transparent\9; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF); zoom:1; background-color:rgba(255,255,255,0.8); -webkit-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -moz-box-shadow:5px 5px 5px rgba(100,100,100,0.3); -o-box-shadow:5px 5px 5px rgba(100,100,100,0.3); box-shadow:5px 5px 5px rgba(100,100,100,0.3); padding:20px; width:925px; float:left}
 
 div#junior{top:700px}
 
