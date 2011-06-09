@@ -1,6 +1,6 @@
 document.ready = function() {
 	if (history.replaceState) {
-		var pageheights = {'/' : 810, '/ueber-uns.html' : 1010,  '/events.html' : 1100,  '/unterstuetzer.html' : 810,  '/kontakt.html' : 900,  '/impressum.html' : 850,  '/libellaswing.html' : 1100,  '/datenschutz.html' : 1100,  '/newsletter.html' : 1000,  '/findusmc.html' : 1100,  '/meissentanzt.html' : 1100,  '/sponsoren.html' : 1000, '/indierocknight.html' : 1100, '/investorrelations.html' : 1050, '/bands.html' : 850, '/anteilseigner.html' : 1020, '/presse.html' : 1100, '/entstehung.html' : 930};
+		var pageheights = {'/' : 810, '/ueber-uns.html' : 1010,  '/events.html' : 1100,  '/unterstuetzer.html' : 810,  '/kontakt.html' : 900,  '/impressum.html' : 850,  '/libellaswing.html' : 1100,  '/datenschutz.html' : 1140,  '/newsletter.html' : 1000,  '/findusmc.html' : 1100,  '/meissentanzt.html' : 1100,  '/sponsoren.html' : 1000, '/indierocknight.html' : 1100, '/investorrelations.html' : 1050, '/bands.html' : 850, '/anteilseigner.html' : 1020, '/presse.html' : 1100, '/entstehung.html' : 930};
 
 		var state = {};
 		bindevents = function () {
