@@ -14,8 +14,7 @@ $(function() {
 	});
 	
 	$('#events').bind('mousewheel', function(event, delta) {
-		scrolltopos(parseInt(handle.css('left')) - delta * 64);
-		return false;
+		return scrolltopos(parseInt(handle.css('left')) - delta * 64);
 	});
 	
 	scrolldabar = function (e) {
@@ -26,12 +25,15 @@ $(function() {
 		if (offset >= barwidth-wdth+clkoffset) {
 			handle.css('left', barwidth-wdth);
 			lines.css('left', (barwidth-wdth) * partial);
+			return;
 		} else if (offset <= clkoffset) {
 			handle.css('left', 0);
 			lines.css('left', 0);
+			return;
 		} else {
 			handle.css('left', offset - clkoffset);
 			lines.css('left', (offset-clkoffset) * partial);
+			return false;
 		}
 	};
 	
