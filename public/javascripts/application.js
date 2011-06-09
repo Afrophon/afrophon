@@ -1,11 +1,11 @@
 document.ready = function() {
 	if (history.replaceState) {
-		var pageheights = {'/' : 810, '/ueber-uns.html' : 1010,  '/events.html' : 1100,  '/unterstuetzer.html' : 810,  '/kontakt.html' : 900,  '/impressum.html' : 850,  '/libellaswing.html' : 1100,  '/datenschutz.html' : 1250,  '/newsletter.html' : 1000,  '/findusmc.html' : 1100,  '/meissentanzt.html' : 1100,  '/sponsoren.html' : 1000, '/indierocknight.html' : 1100, '/investorrelations.html' : 1050, '/bands.html' : 850, '/anteilseigner.html' : 1020, '/presse.html' : 1100, '/entstehung.html' : 930};
+		var pageheights = {'/' : 810, '/ueber-uns.html' : 1010,  '/events.html' : 1100,  '/unterstuetzer.html' : 810,  '/kontakt.html' : 900,  '/impressum.html' : 850,  '/libellaswing.html' : 1100,  '/datenschutz.html' : 1100,  '/newsletter.html' : 1000,  '/findusmc.html' : 1100,  '/meissentanzt.html' : 1100,  '/sponsoren.html' : 1000, '/indierocknight.html' : 1100, '/investorrelations.html' : 1050, '/bands.html' : 850, '/anteilseigner.html' : 1020, '/presse.html' : 1100, '/entstehung.html' : 930};
 
 		var state = {};
 		bindevents = function () {
 			$('#box').height(pageheights[document.location.pathname]);
-			$('a').click(function() {
+			$('a').unbind('click').click(function() {
 				history.pushState(state, "Afrophon", $(this).attr('href'));
 				
 				_gaq.push(['_trackPageview', $(this).attr('href')]);
@@ -29,7 +29,7 @@ document.ready = function() {
 					var navigation = $(xml).find('navigation').text();
 					var title = $(xml).find('title').text();
 					
-					window.scrollTo(0, 0);
+					window.scrollTo(0,0);
 					
 					document.title = title;
 				
