@@ -3,16 +3,128 @@
 	<head>
 		<title>Afrophon</title>
 		<style type="text/css">
-      
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			   v2.0 | 20110126
+			   License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			
+
+			/* http://afrophon.de/
+			   v0.0 | 20120123
+			   All rights reserved.
+			*/
+			
+			body {
+				min-width:800px;
+				background-color:#4DBCE9;
+			}
+			#A_bar {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA6CAYAAABxqDPnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBOUFFRDc1OTNFMTExMUUxQjA5NEZDMTVFNDU0QzE3MSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBOUFFRDc1QTNFMTExMUUxQjA5NEZDMTVFNDU0QzE3MSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkE5QUVENzU3M0UxMTExRTFCMDk0RkMxNUU0NTRDMTcxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkE5QUVENzU4M0UxMTExRTFCMDk0RkMxNUU0NTRDMTcxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/6Jv2AAAACRJREFUeNpi+Pfv338mBiDAQjgy/P//nwGXLJQAKhnWBgAEGACg5yGNQQl5MwAAAABJRU5ErkJggg==) repeat-x;
+				position:relative;
+				top:40px;
+				height:200px;
+				width:100%;
+				float:left;
+			}
+      		#A_gradient {
+				height:200px;
+				background: -webkit-gradient(linear, left top, left bottom, from(#0099CC), to(#4DBCE9));
+				background: -moz-linear-gradient(top, #0099CC, #4DBCE9);
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#0099CCFF, endColorstr=#4DBCE9FF)";
+			}
+	      	#A_logo {
+				height:200px;
+				width:565px;
+				position:absolute;
+				left:15%;
+				background: -webkit-gradient(linear, left top, left bottom, from(#0099CC), to(#4DBCE9));
+				background: -moz-linear-gradient(top, #0099CC, #4DBCE9);
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#0099CCFF, endColorstr=#4DBCE9FF)";
+			}
+			#A_logo img {
+				position:relative;
+				top:38px;
+				left:10px;
+			}
+			#A_banner {
+				background: #FFF;
+				position:relative;
+				top:-5px;
+				width:100%;
+				height:300px;
+			}
+			#A_banner img#background {
+				display:block;
+				margin:auto;
+			}
+			#A_banner img#logo {
+				position:absolute;
+				top:40px;
+				left:30%;
+				margin-left:-275px;
+			}
+			#A_banner #A_leftBackground {
+				height:300px;
+				position:absolute;
+				width:50%;
+				background: #247BBC;
+			}
 		</style>
 	</head>
 	<body>
-    <div id="A_logo">
-      <svg>
-        <circle cx="150px" cy="100px" r="50px" fill="#ff0000" stroke="#000000" stroke-width="5px"/>
-      </svg>      
-    </div>
-		<div id="A_banner"></div>
+    	<div id="A_bar"></div>
+	    <div id="A_logo">
+	    	<img src="logo.png" />
+	    </div>
+			<div id="A_gradient"></div>
+		<div id="A_banner">
+	    	<img src="cafejazz.jpg" id="background" />
+		    <img src="cafejazz-logo.png" id="logo" />
+		</div>
 		<div id="A_missionStatement"></div>
 		<div id="A_groupPhoto"></div>
 		<div id="A_events"></div>
