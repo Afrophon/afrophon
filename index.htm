@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title>Afrophon</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<style type="text/css">
 			/* http://meyerweb.com/eric/tools/css/reset/ 
 			   v2.0 | 20110126
@@ -59,9 +61,15 @@
 			*/
 			
 			body {
-				min-width:800px;
+				min-width:1200px;
 				background-color:#4DBCE9;
 			}
+			
+			a, a:visited {
+				color: black;
+				text-decoration:none;
+			}
+			
 			#A_bar {
 				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA6CAYAAABxqDPnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBOUFFRDc1OTNFMTExMUUxQjA5NEZDMTVFNDU0QzE3MSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBOUFFRDc1QTNFMTExMUUxQjA5NEZDMTVFNDU0QzE3MSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkE5QUVENzU3M0UxMTExRTFCMDk0RkMxNUU0NTRDMTcxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkE5QUVENzU4M0UxMTExRTFCMDk0RkMxNUU0NTRDMTcxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/6Jv2AAAACRJREFUeNpi+Pfv338mBiDAQjgy/P//nwGXLJQAKhnWBgAEGACg5yGNQQl5MwAAAABJRU5ErkJggg==) repeat-x;
 				position:relative;
@@ -91,27 +99,103 @@
 				left:10px;
 			}
 			#A_banner {
-				background: #FFF;
+				background: #1e3f76;
 				position:relative;
-				top:-5px;
+				top:-45px;
 				width:100%;
 				height:300px;
+				margin-bottom:150px;
 			}
-			#A_banner img#background {
+			#A_groupPhoto {
+				width:100%;	
+				height:450px;
+				background: #82e0ff;
+				margin-bottom:80px;
+			}
+			#A_banner img, #A_groupPhoto img {
 				display:block;
 				margin:auto;
 			}
-			#A_banner img#logo {
+			#A_banner div#A_bannerInfo {
 				position:absolute;
+				left:50%;
+				margin-left: 120px;
 				top:40px;
-				left:30%;
-				margin-left:-275px;
+				width:400px;
+				height:310px;
+				background: #FFF;
+				opacity:0.9;
+				padding:25px;
+				font-family:"Lucida Console", Monaco, monospace;
 			}
-			#A_banner #A_leftBackground {
-				height:300px;
+			#A_banner div#A_bannerInfo h1 {
+				font-size: 20px;
+				font-weight: bold;
+				padding: 0 0 10px 0;
+			}
+			#A_banner div#A_bannerInfo li {
+				font-size: 24px;
+				line-height:38px;
+				list-style: none;
+				padding-left: .35em;
+				text-indent: -.35em;
+				font-weight: bold;
+				text-indent:14px;
+			}
+			#A_banner div#A_bannerInfo li:before, .A_section div.A_label:before {
+				content: "\00BB \0020";
+			}
+			#A_banner div#A_bannerInfo li p {
+				padding-left:1.35em;
+			}
+			#A_banner div#A_bannerInfo li div {
+				display:inline;
+				font-size:14px;
+			}
+			#A_banner div#A_bannerInfo a#A_quote {
+				display:block;
+				padding-top:5px;
+				line-height:24px;
+				font-size:18px;
+				font-weight:bold;
+				font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				font-style:italic;
+			}
+			#A_missionStatement {
+				z-index:2;
+				width: 80%;
+				position: relative;
+				font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				font-size:33px;
+				margin:100px auto 100px auto;
+				font-weight:bold;
+				letter-spacing:-2px;
+				text-shadow: 1px 1px 6px #666;
+				color:#FFF;
+			}
+			#A_missionStatement #A_slogan {
+				margin-left:5%;
+				text-shadow: 1px 1px 6px #333;
+			}
+			.A_section {
+				position:relative;
+				border-top:#82e0ff 2px solid;
+				width:100%;
+			}
+			.A_section div.A_label {
 				position:absolute;
-				width:50%;
-				background: #247BBC;
+				top:0;
+				left:0;
+				padding:8px 0 5px 5px;
+				font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				font-size:14px;
+				color:#FFF;
+			}
+			#A_events:nth-child(even) {
+				background:#888;
+			}
+			#A_events:nth-child(odd) {
+				background:#555;
 			}
 		</style>
 	</head>
@@ -122,12 +206,41 @@
 	    </div>
 			<div id="A_gradient"></div>
 		<div id="A_banner">
-	    	<img src="cafejazz.jpg" id="background" />
-		    <img src="cafejazz-logo.png" id="logo" />
+	    	<img src="cafejazz.jpg" />
+			<div id="A_bannerInfo">
+				<h1>Das erste Afrophon Event 2012!</h1>
+				<ul>
+					<a href="http://www.myspace.com/cafejazzband">
+						<li>Café Jazz</li>
+					</a>
+					<a href="http://www.facebook.com/events/332782853418881">
+						<li>+AFTERSHOW +SUPPORT</li>
+						<li>KLIM BIM <div>(Rosengasse 1)</div></li>
+						<li>04.02.2012</li>
+						<li>19:00 Einlass :: <p>Open End</p></li>
+					</a>
+				</ul>
+				<a id="A_quote" href="http://youtu.be/eyTgTiu85eI">
+					„Lass uns tanzen durchs Leben und jeden Stein auf dem Weg mitnehmen.”
+				</a>
+			</div>
 		</div>
-		<div id="A_missionStatement"></div>
-		<div id="A_groupPhoto"></div>
-		<div id="A_events"></div>
+		<div class="A_section">
+			<div class="A_label">Ueber Uns</div>
+			<div id="A_missionStatement">
+				Afrophon ist eine Schülerfirma, die für euch Musikevents in Meißen veranstaltet.
+				<div id="A_slogan">Wieso nach Dresden fahren, wenn Meißen lebendiger wird?</div>
+			</div>
+			<div id="A_groupPhoto">
+				<img src="afrophon.jpg" />
+			</div>
+		</div>
+		<!--
+		-->
+		<div id="A_events" class="A_section">
+			<div class="A_label">Events</div>
+			<div class="A_event">sdhfkds</div>
+		</div>
 		<div id="A_sponsors"></div>
 		<div id="A_newsletter"></div>
 		<div id="A_contact"></div>
